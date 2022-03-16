@@ -104,7 +104,7 @@ function Home({ changeTheme, theme }) {
   }
 
   const addNetwork = () => {
-    window.open('https://github.com/akegaviar/subnet-tech/chain/chains.json', '_blank')
+    window.open('https://github.com/akegaviar/subnet-tech/components/chain/chains.json', '_blank')
   }
 
   const closeAvaxsubnet = (perma) => {

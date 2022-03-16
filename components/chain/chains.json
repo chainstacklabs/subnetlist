@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Avalanche C-Chain Mainnet",
+    "chain": "Avalanche",
+    "rpc": [
+      "https://api.avax.network/ext/bc/C/rpc"
+    ],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "Avalanche",
+      "symbol": "AVAX",
+      "decimals": 18
+    },
+    "infoURL": "https://www.avax.network/",
+    "shortName": "avax",
+    "chainId": 43114,
+    "networkId": 43114,
+    "explorers": [
+      {
+        "name": "Snowtrace",
+        "url": "https://snowtrace.io/",
+        "standard": "EIP3091"
+      }
+    ]
+  },
+  {
+    "name": "Fuji",
+    "title": "Avalanche C-Chain Testnet",
+    "chain": "Avalanche",
+    "rpc": [
+      "https://api.avax-test.network/ext/bc/C/rpc"
+    ],
+    "faucets": [
+      "https://faucet.avax-test.network/"
+    ],
+    "nativeCurrency": {
+      "name": "Fuji AVAX",
+      "symbol": "FUJI AVAX",
+      "decimals": 18
+    },
+    "infoURL": "https://github.com/ava-labs/",
+    "shortName": "avax",
+    "chainId": 43113,
+    "networkId": 43113,
+    "explorers": [
+      {
+        "name": "Snowtrace",
+        "url": "https://testnet.snowtrace.io/",
+        "standard": "EIP3091"
+      }
+    ]
+  },
+  {
+    "name": "Swimmer Test",
+    "title": "Swimmer Test",
+    "chain": "Swimmer Test Subnet",
+    "rpc": [
+      "https://testnet-rpc.swimmer.network/ext/bc/2Sk6j8TYVQc2oR1TtUz64EWHAYjDUoDQ4hpbu6FMN2JBKC77xa/rpc"
+    ],
+    "faucets": [
+      "https://faucet.swimmer.network/"
+    ],
+    "nativeCurrency": {
+      "name": "TUS.e",
+      "symbol": "TUS.e",
+      "decimals": 18
+    },
+    "infoURL": "https://github.com/ava-labs/",
+    "shortName": "swimmer-test",
+    "chainId": 73771,
+    "networkId": 73771,
+    "explorers": [
+      {
+        "name": "Swimmer explorer",
+        "url": "https://testnet-explorer.swimmer.network/",
+        "standard": "EIP3091"
+      }
+    ]
+  }
+]
