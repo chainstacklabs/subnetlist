@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 
 import { Typography, Switch, Button } from '@material-ui/core'
-import { withStyles } from '@material-ui/core/styles';
-import { withTheme } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles'
+import { withTheme } from '@material-ui/core/styles'
 
-import WbSunnyOutlinedIcon from '@material-ui/icons/WbSunnyOutlined';
-import Brightness2Icon from '@material-ui/icons/Brightness2';
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import WbSunnyOutlinedIcon from '@material-ui/icons/WbSunnyOutlined'
+import Brightness2Icon from '@material-ui/icons/Brightness2'
+import ArrowBackIcon from '@material-ui/icons/ArrowBack'
 
 import {
   CONNECT_WALLET,
   TRY_CONNECT_WALLET,
-  ACCOUNT_CONFIGURED
+  ACCOUNT_CONFIGURED,
 } from '../../stores/constants'
 
 // import Unlock from '../unlock'
@@ -41,7 +41,7 @@ const StyledSwitch = withStyles((theme) => ({
     '&$focusVisible $thumb': {
       color: '#ffffff',
       border: '6px solid #fff',
-    }
+    },
   },
   thumb: {
     width: 24,
@@ -70,14 +70,15 @@ const StyledSwitch = withStyles((theme) => ({
       }}
       {...props}
     />
-  );
-});
+  )
+})
 
 function Header(props) {
-
-  const [ account, setAccount ] = useState(null)
-  const [ darkMode, setDarkMode ] = useState(props.theme.palette.type === 'dark' ? true : false);
-  const [ unlockOpen, setUnlockOpen ] = useState(false);
+  const [account, setAccount] = useState(null)
+  const [darkMode, setDarkMode] = useState(
+    props.theme.palette.type === 'dark' ? true : false
+  )
+  const [unlockOpen, setUnlockOpen] = useState(false)
 
   useEffect(() => {
     const accountConfigure = () => {
@@ -91,7 +92,6 @@ function Header(props) {
 
     stores.emitter.on(ACCOUNT_CONFIGURED, accountConfigure)
     stores.emitter.on(CONNECT_WALLET, connectWallet)
-
 
     const accountStore = stores.accountStore.getStore('account')
     setAccount(accountStore)
@@ -113,46 +113,62 @@ function Header(props) {
 
   const renderProviderLogo = () => {
     const providerLogoList = {
-      Metamask: 'metamask'
+      Metamask: 'metamask',
     }
     return providerLogoList[getProvider()]
   }
 
-  useEffect(function() {
-    const localStorageDarkMode = window.localStorage.getItem('yearn.finance-dark-mode')
+  useEffect(function () {
+    const localStorageDarkMode = window.localStorage.getItem(
+      'yearn.finance-dark-mode'
+    )
     setDarkMode(localStorageDarkMode ? localStorageDarkMode === 'dark' : false)
-  },[]);
+  }, [])
 
   return (
-    <div className={ classes.headerContainer }>
-      { props.backClicked && (
-        <div className={ classes.backButton }>
+    <div className={classes.headerContainer}>
+      {props.backClicked && (
+        <div className={classes.backButton}>
           <Button
-          color={ props.theme.palette.type === 'light' ? 'primary' : 'secondary' }
-          onClick={ props.backClicked }
+            color={
+              props.theme.palette.type === 'light' ? 'primary' : 'secondary'
+            }
+            onClick={props.backClicked}
             disableElevation
-            >
-            <ArrowBackIcon fontSize={ 'large' } />
+          >
+            <ArrowBackIcon fontSize={'large'} />
           </Button>
         </div>
       )}
-      <div className={ classes.themeSelectContainer }>
+      {/* TODO: toggle to filter live subnets */}
+      {/* <Switch label="Include testnets" defaultChecked color="primary"></Switch> */}
+      <div className={classes.themeSelectContainer}>
         <StyledSwitch
-          icon={ <Brightness2Icon className={ classes.switchIcon }/> }
-          checkedIcon={ <WbSunnyOutlinedIcon className={ classes.switchIcon }/> }
-          checked={ darkMode }
-          onChange={ handleToggleChange }
+          icon={<Brightness2Icon className={classes.switchIcon} />}
+          checkedIcon={<WbSunnyOutlinedIcon className={classes.switchIcon} />}
+          checked={darkMode}
+          onChange={handleToggleChange}
         />
       </div>
       <Button
         disableElevation
-        className={ classes.accountButton }
-        variant='contained'
-        color='secondary'
-        onClick={ onAddressClicked }
-        >
-        { account && account.address && <div className={ `${classes.accountIcon} ${classes[renderProviderLogo()]}` }></div>}
-        <Typography variant='h5'>{ (account && account.address)? formatAddress(account.address) : 'Connect wallet' }</Typography>
+        className={classes.accountButton}
+        variant="contained"
+        color="secondary"
+        onClick={onAddressClicked}
+      >
+        {account && account.address && (
+          <div
+            className={`${classes.accountIcon} ${
+              classes[renderProviderLogo()]
+            }`}
+          ></div>
+        )}
+        <Typography variant="h5">
+          {account && account.address
+            ? formatAddress(account.address)
+            : 'Connect wallet'}
+        </Typography>
       </Button>
     </div>
   )

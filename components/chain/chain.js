@@ -97,9 +97,9 @@ export default function Chain({ chain }) {
   }
   const renderNet = () => {
     if (chain.isMainnet) {
-      return `Mainnet`
+      return `Live`
     }
-    return `Testnet`
+    return `Test`
   }
   const netColor = () => {
     if (chain.isMainnet) {

@@ -240,6 +240,7 @@ function Home({ changeTheme, theme }) {
                   </Paper>
                 </ThemeProvider>
               </div>
+
               <Header changeTheme={changeTheme} />
             </div>
             <div className={classes.cardsContainer}>
