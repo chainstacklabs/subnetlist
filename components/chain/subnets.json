@@ -1,8 +1,9 @@
 [
   {
-    "name": "Subnet one",
-    "chain": "Subnet one",
-    "description": "this subnet is used for the SXXXXX project",
+    "name": "Bthereum",
+    "chain": "Bthereum",
+    "description": "",
+    "isMainnet": false,
     "rpc": [
       "https://api.avax.network/ext/bc/C/rpc"
     ],
@@ -30,6 +31,7 @@
     "rpc": [
       "https://api.avax.network/ext/bc/C/rpc"
     ],
+    "isMainnet": true,
     "faucets": [],
     "nativeCurrency": {
       "name": "Avalanche 2",

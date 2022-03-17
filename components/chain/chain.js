@@ -1,5 +1,13 @@
 import React, { useState, useEffect, useMemo } from 'react'
-import { Typography, Paper, Grid, Button, Tooltip } from '@material-ui/core'
+import {
+  Typography,
+  Paper,
+  Grid,
+  Button,
+  Tooltip,
+  Chip,
+  Badge,
+} from '@material-ui/core'
 import { useRouter } from 'next/router'
 
 import classes from './chain.module.css'
@@ -87,6 +95,18 @@ export default function Chain({ chain }) {
       return 'Connect wallet'
     }
   }
+  const renderNet = () => {
+    if (chain.isMainnet) {
+      return `Mainnet`
+    }
+    return `Testnet`
+  }
+  const netColor = () => {
+    if (chain.isMainnet) {
+      return `primary`
+    }
+    return `secondary`
+  }
 
   const icon = useMemo(() => {
     return chain.chainSlug
@@ -99,58 +119,64 @@ export default function Chain({ chain }) {
   }
 
   return (
-    <Paper elevation={1} className={classes.chainContainer} key={chain.chainId}>
-      <div className={classes.chainNameContainer}>
-        <img
-          // src="/connectors/icn-asd.svg"
-          src="/chains/unknown-logo.png"
-          onError={(e) => {
-            e.target.onerror = null
-            e.target.src = '/chains/unknown-logo.png'
-          }}
-          width={28}
-          height={28}
-          className={classes.avatar}
-        />
-        <Tooltip title={chain.name}>
-          <Typography variant="h3" className={classes.name} noWrap>
-            <a href={chain.infoURL} target="_blank" rel="noreferrer">
-              {chain.name}
-            </a>
-          </Typography>
-        </Tooltip>
-      </div>
-      <div className={classes.chainInfoContainer}>
-        <div className={classes.dataPoint}>
-          <Typography
-            variant="subtitle1"
-            color="textSecondary"
-            className={classes.dataPointHeader}
-          >
-            ChainID
-          </Typography>
-          <Typography variant="h5">{chain.chainId}</Typography>
+    <Badge badgeContent={renderNet()} color={netColor()}>
+      <Paper
+        elevation={1}
+        className={classes.chainContainer}
+        key={chain.chainId}
+      >
+        <div className={classes.chainNameContainer}>
+          <img
+            // src="/connectors/icn-asd.svg"
+            src="/chains/unknown-logo.png"
+            onError={(e) => {
+              e.target.onerror = null
+              e.target.src = '/chains/unknown-logo.png'
+            }}
+            width={28}
+            height={28}
+            className={classes.avatar}
+          />
+          <Tooltip title={chain.name}>
+            <Typography variant="h3" className={classes.name} noWrap>
+              <a href={chain.infoURL} target="_blank" rel="noreferrer">
+                {chain.name}
+              </a>
+            </Typography>
+          </Tooltip>
         </div>
-        <div className={classes.dataPoint}>
-          <Typography
-            variant="subtitle1"
-            color="textSecondary"
-            className={classes.dataPointHeader}
-          >
-            Currency
-          </Typography>
-          <Typography variant="h5">
-            {chain.nativeCurrency ? chain.nativeCurrency.symbol : 'none'}
-          </Typography>
+        <div className={classes.chainInfoContainer}>
+          <div className={classes.dataPoint}>
+            <Typography
+              variant="subtitle1"
+              color="textSecondary"
+              className={classes.dataPointHeader}
+            >
+              ChainID
+            </Typography>
+            <Typography variant="h5">{chain.chainId}</Typography>
+          </div>
+          <div className={classes.dataPoint}>
+            <Typography
+              variant="subtitle1"
+              color="textSecondary"
+              className={classes.dataPointHeader}
+            >
+              Currency
+            </Typography>
+            <Typography variant="h5">
+              {chain.nativeCurrency ? chain.nativeCurrency.symbol : 'none'}
+            </Typography>
+          </div>
         </div>
-      </div>
 
-      <p className="">{chain.description}</p>
-      <div className={classes.addButton}>
-        <Button variant="outlined" color="primary" onClick={addToNetwork}>
-          {renderProviderText()}
-        </Button>
-      </div>
-    </Paper>
+        <p className="">{chain.description}</p>
+        <div className={classes.addButton}>
+          <Button variant="outlined" color="primary" onClick={addToNetwork}>
+            {renderProviderText()}
+          </Button>
+        </div>
+      </Paper>
+    </Badge>
   )
 }

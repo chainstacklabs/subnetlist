@@ -10,7 +10,9 @@
   justify-content: center;
 }
 
-.name {
+.chipNet {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .chainInfoContainer {
