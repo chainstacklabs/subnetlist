@@ -87,6 +87,7 @@ const searchTheme = createMuiTheme({
 const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
 function Home({ changeTheme, theme }) {
+  // loads from json
   // const { data, error } = useSWR(
   //   'https://api.jsonbin.io/b/622f02ffa703bb67492b1051/2',
   //   fetcher
