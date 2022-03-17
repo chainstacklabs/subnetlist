@@ -84,7 +84,7 @@ const searchTheme = createMuiTheme({
   },
 })
 
-const fetcher = (...args) => fetch(...args).then((res) => res.json())
+// const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
 function Home({ changeTheme, theme }) {
   // loads from json
@@ -231,7 +231,7 @@ function Home({ changeTheme, theme }) {
                             <Typography
                               className={classes.searchInputAdnornment}
                             >
-                              Search networks
+                              Search subnets:
                             </Typography>
                           </InputAdornment>
                         ),
