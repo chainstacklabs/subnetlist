@@ -1,7 +1,7 @@
 .chainContainer {
   width: 100%;
   border-radius: 10px;
-  background: #2682FF !important;
+  background: #2682ff !important;
   display: flex;
   flex-direction: column;
 
@@ -20,6 +20,7 @@
 .descriptionText {
   width: 100%;
   color: #fff !important;
+  padding-bottom: 15px;
 }
 
 .topInfo {
@@ -32,13 +33,12 @@
 }
 
 .bottomActions {
-  border-top: 1px solid #FFFFFF1A;
+  border-top: 1px solid #ffffff1a;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding: 6px 24px;
 }
-
 
 .buttonLabel {
   text-transform: none !important;
@@ -52,7 +52,6 @@
   justify-content: space-between;
 }
 
-
 @media screen and (max-width: 1700px) {
   .chainContainer {
     grid-column-start: 2;
@@ -61,7 +60,6 @@
     grid-row-end: 4;
   }
 }
-
 
 @media screen and (max-width: 600px) {
   .chainContainer {

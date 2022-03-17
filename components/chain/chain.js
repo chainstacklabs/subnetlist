@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import { Typography, Paper, Grid, Button, Tooltip } from '@material-ui/core'
-import Skeleton from '@material-ui/lab/Skeleton'
 import { useRouter } from 'next/router'
-import Web3 from 'web3'
 
 import classes from './chain.module.css'
 
