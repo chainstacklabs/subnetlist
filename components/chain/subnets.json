@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Subnet one",
+    "chain": "Subnet one",
+    "description": "this subnet is used for the SXXXXX project",
+    "rpc": [
+      "https://api.avax.network/ext/bc/C/rpc"
+    ],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "Avalanche",
+      "symbol": "SUB-1",
+      "decimals": 18
+    },
+    "infoURL": "https://www.avax.network/",
+    "shortName": "avax",
+    "chainId": 43114,
+    "networkId": 43114,
+    "explorers": [
+      {
+        "name": "Snowtrace",
+        "url": "https://snowtrace.io/",
+        "standard": "EIP3091"
+      }
+    ]
+  },
+  {
+    "name": "Subnet two",
+    "chain": "Subnet two",
+    "rpc": [
+      "https://api.avax.network/ext/bc/C/rpc"
+    ],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "Avalanche 2",
+      "symbol": "SUB-2",
+      "decimals": 18
+    },
+    "infoURL": "https://www.avax.network/",
+    "shortName": "avax",
+    "chainId": 43114,
+    "networkId": 43114,
+    "explorers": [
+      {
+        "name": "Snowtrace",
+        "url": "https://snowtrace.io/",
+        "standard": "EIP3091"
+      }
+    ]
+  }
+]
