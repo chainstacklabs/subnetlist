@@ -31,6 +31,7 @@ import useSWR from 'swr'
 import classes from './index.module.css'
 
 import subnetList from '../components/chain/subnets.json'
+import mainnetList from '../components/chain/chains.json'
 
 const searchTheme = createMuiTheme({
   palette: {
@@ -92,6 +93,8 @@ function Home({ changeTheme, theme }) {
   //   'https://api.jsonbin.io/b/622f02ffa703bb67492b1051/2',
   //   fetcher
   // )
+
+  const allNets = [...mainnetList, ...subnetList]
 
   const [layout, setLayout] = useState('grid')
   const [search, setSearch] = useState('')
@@ -243,12 +246,13 @@ function Home({ changeTheme, theme }) {
 
               <Header changeTheme={changeTheme} />
             </div>
+
             <div className={classes.cardsContainer}>
               {hideAvaxsubnet === '0' && (
                 <AvaxSubnet closeAvaxsubnet={closeAvaxsubnet} />
               )}
-              {subnetList &&
-                subnetList
+              {allNets &&
+                allNets
                   .filter((chain) => {
                     if (search === '') {
                       return true

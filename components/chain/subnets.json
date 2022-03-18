@@ -1,9 +1,39 @@
 [
   {
+    "name": "Swimmer Test",
+    "title": "Swimmer Test",
+    "description": "Subnet created for the Crabada project, a play and earn idle game.",
+    "projectURL": "https://www.crabada.com/",
+    "chain": "Swimmer Test Subnet",
+    "isLive": true,
+    "rpc": [
+      "https://testnet-rpc.swimmer.network/ext/bc/2Sk6j8TYVQc2oR1TtUz64EWHAYjDUoDQ4hpbu6FMN2JBKC77xa/rpc"
+    ],
+    "faucets": [
+      "https://faucet.swimmer.network/"
+    ],
+    "nativeCurrency": {
+      "name": "TUS.e",
+      "symbol": "TUS.e",
+      "decimals": 18
+    },
+    "infoURL": "https://github.com/ava-labs/",
+    "shortName": "swimmer-test",
+    "chainId": 73771,
+    "networkId": 73771,
+    "explorers": [
+      {
+        "name": "Swimmer explorer",
+        "url": "https://testnet-explorer.swimmer.network/",
+        "standard": "EIP3091"
+      }
+    ]
+  },
+  {
     "name": "Bthereum",
     "chain": "Bthereum",
     "description": "",
-    "isMainnet": false,
+    "isLive": false,
     "rpc": [
       "https://api.avax.network/ext/bc/C/rpc"
     ],
@@ -31,7 +61,7 @@
     "rpc": [
       "https://api.avax.network/ext/bc/C/rpc"
     ],
-    "isMainnet": true,
+    "isLive": true,
     "faucets": [],
     "nativeCurrency": {
       "name": "Avalanche 2",

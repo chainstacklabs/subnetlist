@@ -92,26 +92,35 @@ export default function Chain({ chain }) {
       }
       return providerTextList[getProvider()]
     } else {
-      return 'Connect wallet'
+      return 'Connect wallet to add'
     }
   }
-  const renderNet = () => {
-    if (chain.isMainnet) {
-      return `Live`
+  const renderBadgeLabel = () => {
+    if (chain.isMain && chain.isLive) {
+      return `Mainnet`
     }
-    return `Test`
+    if (chain.isMain && !chain.isLive) {
+      return `Testnet`
+    }
+    if (!chain.isMain && chain.isLive) {
+      return `Subnet Live`
+    }
+
+    return `Subnet Test`
   }
   const netColor = () => {
-    if (chain.isMainnet) {
+    // return `primary`
+    if (chain.isMain) {
       return `primary`
     }
     return `secondary`
   }
 
   const icon = useMemo(() => {
-    return chain.chainSlug
-      ? `https://subnet.tech/chain-icons/rsz_${chain.chainSlug}.jpg`
-      : '/unknown-logo.png'
+    return chain.isMain ? `/favicon.png` : `chains/unknown-logo.png`
+    // return chain.chainSlug
+    //   ? `https://subnet.tech/chain-icons/rsz_${chain.chainSlug}.jpg`
+    //   : '/unknown-logo.png'
   }, [chain])
 
   if (!chain) {
@@ -119,7 +128,7 @@ export default function Chain({ chain }) {
   }
 
   return (
-    <Badge badgeContent={renderNet()} color={netColor()}>
+    <Badge badgeContent={renderBadgeLabel()} color={netColor()}>
       <Paper
         elevation={1}
         className={classes.chainContainer}
@@ -128,7 +137,8 @@ export default function Chain({ chain }) {
         <div className={classes.chainNameContainer}>
           <img
             // src="/connectors/icn-asd.svg"
-            src="/chains/unknown-logo.png"
+            // src="/chains/unknown-logo.png"
+            src={icon}
             onError={(e) => {
               e.target.onerror = null
               e.target.src = '/chains/unknown-logo.png'
@@ -145,6 +155,12 @@ export default function Chain({ chain }) {
             </Typography>
           </Tooltip>
         </div>
+        {/* Conditional rendering */}
+        {chain.description && (
+          <div className={classes.chainDescContainer}>
+            <p className="">{chain.description}</p>
+          </div>
+        )}
         <div className={classes.chainInfoContainer}>
           <div className={classes.dataPoint}>
             <Typography
@@ -169,8 +185,8 @@ export default function Chain({ chain }) {
             </Typography>
           </div>
         </div>
+        {chain.projec}
 
-        <p className="">{chain.description}</p>
         <div className={classes.addButton}>
           <Button variant="outlined" color="primary" onClick={addToNetwork}>
             {renderProviderText()}

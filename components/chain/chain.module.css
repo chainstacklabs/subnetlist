@@ -18,13 +18,21 @@
 .chainInfoContainer {
   display: flex;
   align-items: flex-start;
-  margin-left: 52px;
+  justify-content: space-around;
+  /* margin-left: 22px; */
   margin-bottom: 20px;
 }
 
-.dataPoint {
-  flex: 1;
+.chainDescContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-bottom: 10px;
 }
+
+/* .dataPoint {
+  flex: 1;
+} */
 
 .dataPointHeader {
   padding-bottom: 7px;
