@@ -1,5 +1,32 @@
 This is a fork of the [original network list by Anton Nell](https://github.com/antonnell/networklist-org).
 
+## Adding a subnet
+
+To add a subnet, fork this repo and add a new object in the `components/chain/subnets.json` file with the details below. Create a PR to merge your change into this repo.
+
+Subnet attributes details:
+
+```json
+{
+  "name": "", // chain name
+  "chain: "", // used to search
+  "title": "", // display name
+  "description": "", // optional, max 150 characters
+  "projectURL": "", // optional, http URL to the prooject
+  "isLive" : true/false // indicates if the subnet is test or live
+  "nativeCurrency.name": "", // name of the project token
+  "nativeCurrency.symbol": "", // symbol of the project token
+  "nativeCurrency.decimals":"", //
+  "chainId": 123 // required for the button to add to metamask
+  "rpc": "", // RPC endpoint. Required for button to add to metamask
+  "blockchain" : "", // optional. provided by Avalanche
+  "subnetId" : "", // optional. provided by Avalanche
+  "validators": 123 // optional. number of validators
+  "faucets": [] // list of urls of different faucets. Maximum 3
+
+}
+```
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
