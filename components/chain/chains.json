@@ -29,7 +29,7 @@
   {
     "name": "Fuji",
     "title": "Avalanche C-Chain Testnet",
-    "description": "Main test net for Avalanche network",
+    "description": "Main testnet for Avalanche network",
     "isMain": true,
     "isLive": false,
     "chain": "Avalanche",

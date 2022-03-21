@@ -2,13 +2,17 @@ import React, { useState, useEffect, useMemo } from 'react'
 import {
   Typography,
   Paper,
-  Grid,
   Button,
   Tooltip,
-  Chip,
   Badge,
+  IconButton,
+  Link,
 } from '@material-ui/core'
 import { useRouter } from 'next/router'
+
+import MonetizationOnIcon from '@material-ui/icons/MonetizationOn'
+import WebIcon from '@material-ui/icons/Web'
+import LinkIcon from '@material-ui/icons/Link'
 
 import classes from './chain.module.css'
 
@@ -185,6 +189,54 @@ export default function Chain({ chain }) {
             </Typography>
           </div>
         </div>
+
+        {chain.faucets.length > 0 && (
+          <div>
+            <Typography
+              variant="body2"
+              align="center"
+              className={classes.titleSection}
+            >
+              Faucets
+            </Typography>
+            <div className={classes.chainSitesContainer}>
+              {chain.faucets &&
+                chain.faucets.map((link, index) => (
+                  <IconButton
+                    underline="hover"
+                    href={link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <MonetizationOnIcon />
+                  </IconButton>
+                ))}
+            </div>
+          </div>
+        )}
+
+        {/* {chain.projectURL && (
+          <p>
+            Project site:
+            <IconButton
+              underline="hover"
+              href={chain.projectURL}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LinkIcon />
+            </IconButton>
+          </p>
+        )} */}
+
+        {chain.projectURL && (
+          <div className={classes.chainDescContainer}>
+            <Link href={chain.projectURL} align="center" classList="mb5">
+              Visit project website
+            </Link>
+          </div>
+        )}
+
         {chain.projec}
 
         <div className={classes.addButton}>

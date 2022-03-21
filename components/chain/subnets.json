@@ -1,5 +1,25 @@
 [
   {
+    "name": "DFK Chain",
+    "chain": "DFK Chain Subnet",
+    "title": "DFK Chain",
+    "description": "Subnet for DefiKingdoms project, a Defi protocol/NFT game running on Avalanche & Harmony.",
+    "projectURL": "https://defikingdoms.com/",
+    "isLive": true,
+    "nativeCurrency": {
+      "name": "Crystal",
+      "symbol": "Crystal",
+      "decimals": 18
+    },
+    "chainId": "N/A",
+    "networkId": "N/A",
+    "blockchain": "q2aTwKuyzgs8pynF7UXBZCU7DejbZbZ6EUyHr3JQzYgwNPUPi",
+    "subnetId": "Vn3aX6hNRstj5VHHm63TCgPNaeGnRSqCYXQqemSqDd2TQH4qJ",
+    "validators": 2,
+    "faucets": [],
+    "rpc": ""
+  },
+  {
     "name": "Swimmer Test",
     "title": "Swimmer Test",
     "description": "Subnet created for the Crabada project, a play and earn idle game.",
@@ -41,31 +61,6 @@
     "nativeCurrency": {
       "name": "Avalanche",
       "symbol": "SUB-1",
-      "decimals": 18
-    },
-    "infoURL": "https://www.avax.network/",
-    "shortName": "avax",
-    "chainId": 43114,
-    "networkId": 43114,
-    "explorers": [
-      {
-        "name": "Snowtrace",
-        "url": "https://snowtrace.io/",
-        "standard": "EIP3091"
-      }
-    ]
-  },
-  {
-    "name": "Subnet two",
-    "chain": "Subnet two",
-    "rpc": [
-      "https://api.avax.network/ext/bc/C/rpc"
-    ],
-    "isLive": true,
-    "faucets": [],
-    "nativeCurrency": {
-      "name": "Avalanche 2",
-      "symbol": "SUB-2",
       "decimals": 18
     },
     "infoURL": "https://www.avax.network/",

@@ -30,6 +30,7 @@ import useSWR from 'swr'
 
 import classes from './index.module.css'
 
+// Check in https://testnet.avascan.info/blockchains
 import subnetList from '../components/chain/subnets.json'
 import mainnetList from '../components/chain/chains.json'
 
