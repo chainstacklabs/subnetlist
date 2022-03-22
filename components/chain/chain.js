@@ -11,8 +11,6 @@ import {
 import { useRouter } from 'next/router'
 
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn'
-import WebIcon from '@material-ui/icons/Web'
-import LinkIcon from '@material-ui/icons/Link'
 
 import classes from './chain.module.css'
 
