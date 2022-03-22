@@ -6,6 +6,7 @@ import {
   Button,
   FormControlLabel,
   Checkbox,
+  Link,
 } from '@material-ui/core'
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward'
@@ -78,13 +79,16 @@ export default function Avaxsubnet({ closeAvaxsubnet }) {
             height={126}
             className={classes.avatar}
           />
-          <Typography
+          <Link
+            href="https://chainstack.com/permissioned-chains-avalanche-subnets/"
             variant="subtitle1"
             className={classes.descriptionText}
             align="center"
+            target="_blank"
           >
             Run your own Avalanche subnet with Chainstack.
-          </Typography>
+          </Link>
+
           <Button
             className={classes.tryButton}
             variant="contained"
@@ -97,6 +101,10 @@ export default function Avaxsubnet({ closeAvaxsubnet }) {
               Try out <b>chainstack.com</b>
             </Typography>
           </Button>
+
+          {/* <Link href="" align="center" className={classes.articleText}>
+            Create Permissioned chains with Chainstack and Covalent
+          </Link> */}
         </div>
         <div className={classes.bottomActions}>
           <FormControlLabel
