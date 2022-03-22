@@ -10,18 +10,39 @@
   justify-content: center;
 }
 
-.name {
+.chipNet {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .chainInfoContainer {
   display: flex;
   align-items: flex-start;
-  margin-left: 52px;
+  justify-content: space-around;
+  /* margin-left: 22px; */
   margin-bottom: 20px;
 }
 
-.dataPoint {
+.chainDescContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.chainSitesContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+/* .dataPoint {
   flex: 1;
+} */
+.titleSection {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .dataPointHeader {
