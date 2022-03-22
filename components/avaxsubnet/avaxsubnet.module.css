@@ -8,7 +8,7 @@
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 2;
-  grid-row-end: 4;
+  grid-row-end: 3;
 }
 
 .tryButton {
@@ -27,8 +27,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  flex-grow: 1;
+  justify-content: space-around;
+  /* flex-grow: 1; */
   padding: 30px;
 }
 
@@ -57,7 +57,7 @@
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
-    grid-row-end: 4;
+    grid-row-end: 3;
   }
 }
 
