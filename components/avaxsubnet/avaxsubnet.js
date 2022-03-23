@@ -79,15 +79,14 @@ export default function Avaxsubnet({ closeAvaxsubnet }) {
             height={126}
             className={classes.avatar}
           />
-          <Link
-            href="https://chainstack.com/permissioned-chains-avalanche-subnets/"
+          <Typography
             variant="subtitle1"
             className={classes.descriptionText}
             align="center"
             target="_blank"
           >
             Run your own Avalanche subnet with Chainstack.
-          </Link>
+          </Typography>
 
           <Button
             className={classes.tryButton}
