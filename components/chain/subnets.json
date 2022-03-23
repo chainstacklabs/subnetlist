@@ -2,8 +2,8 @@
   {
     "name": "DFK Chain",
     "chain": "DFK Chain Subnet",
-    "title": "DFK Chain",
-    "description": "Subnet for DefiKingdoms project, a Defi protocol/NFT game running on Avalanche & Harmony.",
+    "title": "DeFi Kingdom chain",
+    "description": "Subnet for the DeFi Kingdom project, a DeFi protocol/NFT game running on Avalanche & Harmony.",
     "projectURL": "https://defikingdoms.com/",
     "isLive": true,
     "nativeCurrency": {
@@ -20,8 +20,8 @@
     "rpc": ""
   },
   {
-    "name": "Swimmer Test",
-    "title": "Swimmer Test",
+    "name": "Swimmer Testnet",
+    "title": "Swimmer Testnet",
     "description": "Subnet created for the Crabada project, a play and earn idle game.",
     "projectURL": "https://www.crabada.com/",
     "chain": "Swimmer Test Subnet",
@@ -37,7 +37,6 @@
       "symbol": "TUS.e",
       "decimals": 18
     },
-    "infoURL": "https://github.com/ava-labs/",
     "shortName": "swimmer-test",
     "chainId": 73771,
     "networkId": 73771,
@@ -45,32 +44,6 @@
       {
         "name": "Swimmer explorer",
         "url": "https://testnet-explorer.swimmer.network/",
-        "standard": "EIP3091"
-      }
-    ]
-  },
-  {
-    "name": "Bthereum",
-    "chain": "Bthereum",
-    "description": "",
-    "isLive": false,
-    "rpc": [
-      "https://api.avax.network/ext/bc/C/rpc"
-    ],
-    "faucets": [],
-    "nativeCurrency": {
-      "name": "Avalanche",
-      "symbol": "SUB-1",
-      "decimals": 18
-    },
-    "infoURL": "https://www.avax.network/",
-    "shortName": "avax",
-    "chainId": 43114,
-    "networkId": 43114,
-    "explorers": [
-      {
-        "name": "Snowtrace",
-        "url": "https://snowtrace.io/",
         "standard": "EIP3091"
       }
     ]
