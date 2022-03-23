@@ -213,28 +213,6 @@ export default function Chain({ chain }) {
           </div>
         )}
 
-        {/* {chain.projectURL && (
-          <p>
-            Project site:
-            <IconButton
-              underline="hover"
-              href={chain.projectURL}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <LinkIcon />
-            </IconButton>
-          </p>
-        )} */}
-
-        {chain.projectURL && (
-          <div className={classes.chainDescContainer}>
-            <Link href={chain.projectURL} align="center" classList="mb5">
-              Visit project website
-            </Link>
-          </div>
-        )}
-
         {chain.projec}
 
         <div className={classes.addButton}>
@@ -242,6 +220,19 @@ export default function Chain({ chain }) {
             {renderProviderText()}
           </Button>
         </div>
+
+        {chain.projectURL && (
+          <div className={classes.chainDescContainer}>
+            <Link
+              href={chain.projectURL}
+              align="center"
+              classList="mb5"
+              target="_blank"
+            >
+              Visit project website
+            </Link>
+          </div>
+        )}
       </Paper>
     </Badge>
   )
