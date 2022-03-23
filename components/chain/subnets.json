@@ -25,7 +25,7 @@
     "description": "Subnet created for the Crabada project, a play and earn idle game.",
     "projectURL": "https://www.crabada.com/",
     "chain": "Swimmer Test Subnet",
-    "isLive": true,
+    "isLive": false,
     "rpc": [
       "https://testnet-rpc.swimmer.network/ext/bc/2Sk6j8TYVQc2oR1TtUz64EWHAYjDUoDQ4hpbu6FMN2JBKC77xa/rpc"
     ],
