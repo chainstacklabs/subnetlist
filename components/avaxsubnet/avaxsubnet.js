@@ -18,7 +18,7 @@ export default function Avaxsubnet({ closeAvaxsubnet }) {
   const [checked, setChecked] = useState(false)
 
   const navigateToAvaxsubnet = () => {
-    window.open('https://chainstack.com', '_blank')
+    window.open('https://chainstack.com/permissioned-chains-avalanche-subnets/', '_blank')
   }
 
   const handleChange = () => {
