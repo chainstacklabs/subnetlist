@@ -17,7 +17,8 @@
     "subnetId": "Vn3aX6hNRstj5VHHm63TCgPNaeGnRSqCYXQqemSqDd2TQH4qJ",
     "validators": 2,
     "faucets": [],
-    "rpc": ""
+    "rpc": [],
+    "explorers": null
   },
   {
     "name": "Swimmer Testnet",
@@ -47,5 +48,29 @@
         "standard": "EIP3091"
       }
     ]
+  },
+  {
+    "name": "WAGMI ",
+    "chain": "WAGMI Subnet",
+    "title": "WAGMI Subnet",
+    "description": "Test subnet created by Avalanche used to experiment with release candidates before they make it into an official coreth release.",
+    "projectURL": "https://ava-labs-inc.metabaseapp.com/public/dashboard/15e33581-113a-4671-87f9-766d98e8d4e9#refresh=60",
+    "isLive": false,
+    "nativeCurrency": {
+      "name": "WAGMI",
+      "symbol": "WGM",
+      "decimals": 18
+    },
+    "chainId": 11111,
+    "networkId": 11111,
+    "blockchain": "2ebCneCbwthjQ1rYT41nhd7M76Hc6YmosMAQrTFhBq8qeqh6tt",
+    "subnetId": "28nrH5T2BMvNrWecFcV3mfccjs6axM1TVyqe79MCv2Mhs8kxiY",
+    "faucets": [
+      "https://faucet.trywagmi.xyz/"
+    ],
+    "rpc": [
+      "https://api-wagmi.avax-test.network/rpc"
+    ],
+    "infoURL": "https://github.com/ava-labs/"
   }
 ]
