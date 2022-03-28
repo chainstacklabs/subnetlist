@@ -2,7 +2,7 @@
   {
     "name": "Avalanche C-Chain Mainnet",
     "chain": "Avalanche",
-    "description": "Avalanche main network",
+    "description": "Avalanche main network.",
     "isMain": true,
     "isLive": true,
     "rpc": [
@@ -27,9 +27,9 @@
     ]
   },
   {
-    "name": "Fuji",
+    "name": "Fuji C-Chain Testnet",
     "title": "Avalanche C-Chain Testnet",
-    "description": "Main testnet for Avalanche network",
+    "description": "Avalanche test network.",
     "isMain": true,
     "isLive": false,
     "chain": "Avalanche",

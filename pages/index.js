@@ -119,7 +119,7 @@ function Home({ changeTheme, theme }) {
 
   const addNetwork = () => {
     window.open(
-      'https://github.com/akegaviar/subnet-tech/blob/master/components/chain/chains.json',
+      'https://github.com/akegaviar/subnet-tech#adding-a-subnet',
       '_blank'
     )
   }

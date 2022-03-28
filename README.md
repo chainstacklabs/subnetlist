@@ -2,11 +2,11 @@ This is a fork of the [original network list by Anton Nell](https://github.com/a
 
 ## Adding a subnet
 
-To add a subnet, fork this repo and add a new object in the `components/chain/subnets.json` file with the details below. Create a PR to merge your change into this repo.
+To add a subnet, fork this repo and add a new object in the `components/chain/subnets.json` file with the details below. Create a PR to merge your change into this repo and it'll automatically go live.
 
 Subnet attributes details:
 
-```json
+```js
 {
   "name": "", // chain name
   "chain: "", // used to search
@@ -16,20 +16,21 @@ Subnet attributes details:
   "isLive" : true/false // indicates if the subnet is test or live
   "nativeCurrency.name": "", // name of the project token
   "nativeCurrency.symbol": "", // symbol of the project token
-  "nativeCurrency.decimals":"", //
-  "chainId": 123 // required for the button to add to metamask
+  "nativeCurrency.decimals": 18, //
+  "chainId": 0x12345 // required for the button to add to metamask. 0x format
   "rpc": "", // RPC endpoint. Required for button to add to metamask
   "blockchain" : "", // optional. provided by Avalanche
   "subnetId" : "", // optional. provided by Avalanche
   "validators": 123 // optional. number of validators
   "faucets": [] // list of urls of different faucets. Maximum 3
+  "explorers": []  // list of explorer urls
 
 }
 ```
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
