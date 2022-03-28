@@ -1,24 +1,59 @@
 [
   {
     "name": "DFK Chain",
-    "chain": "DFK Chain Subnet",
-    "title": "DeFi Kingdom chain",
-    "description": "Subnet for the DeFi Kingdom project, a DeFi protocol/NFT game running on Avalanche & Harmony.",
-    "projectURL": "https://defikingdoms.com/",
+    "chain": "DFK",
+    "description": "Subnet for DefiKingdoms project, a Defi protocol/NFT game running on Avalanche & Harmony.",
+
     "isLive": true,
+    "rpc": [
+      "https://api-dfk.avax.network/rpc"
+    ],
+    "faucets": [],
     "nativeCurrency": {
-      "name": "Crystal",
-      "symbol": "Crystal",
+      "name": "Jewel",
+      "symbol": "JEWEL",
       "decimals": 18
     },
-    "chainId": "N/A",
-    "networkId": "N/A",
-    "blockchain": "q2aTwKuyzgs8pynF7UXBZCU7DejbZbZ6EUyHr3JQzYgwNPUPi",
-    "subnetId": "Vn3aX6hNRstj5VHHm63TCgPNaeGnRSqCYXQqemSqDd2TQH4qJ",
-    "validators": 2,
+    "projectURL": "https://defikingdoms.com",
+    "shortName": "DFK",
+    "chainId": 53935,
+    "networkId": 53935,
+    "explorers": [
+      {
+        "name": "ethernal",
+        "url": "https://explorer.dfkchain.com",
+        "icon": "ethereum",
+        "standard": "none"
+      }
+    ]
+  },
+  {
+    "name": "DFK Chain Test",
+    "chain": "DFK",
+    "description": "Test subnet for DefiKingdoms project, a Defi protocol/NFT game running on Avalanche & Harmony.",
+    "isLive": false,
+    "rpc": [
+      "https://api-dfk.avax-test.network/rpc"
+    ],
     "faucets": [],
-    "rpc": [],
-    "explorers": null
+    "nativeCurrency": {
+      "name": "Jewel",
+      "symbol": "JEWEL",
+      "decimals": 18
+    },
+    "projectURL": "https://defikingdoms.com",
+    "shortName": "DFKTEST",
+    "chainId": 335,
+    "networkId": 335,
+    "explorers": [
+      {
+        "name": "ethernal",
+        "url": "https://explorer-test.dfkchain.com",
+        "icon": "ethereum",
+        "standard": "none"
+      }
+    ]
+
   },
   {
     "name": "Swimmer Testnet",

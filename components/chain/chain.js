@@ -213,6 +213,34 @@ export default function Chain({ chain }) {
           </div>
         )}
 
+        {/* {chain.projectURL && (
+          <p>
+            Project site:
+            <IconButton
+              underline="hover"
+              href={chain.projectURL}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LinkIcon />
+            </IconButton>
+          </p>
+        )} */}
+
+        {chain.projectURL && (
+          <div className={classes.chainDescContainer}>
+            <Link
+              href={chain.projectURL}
+              target="_blank"
+              align="center"
+              classlist="mb5"
+            >
+              Visit project website
+            </Link>
+          </div>
+        )}
+
+
         {chain.projec}
 
         <div className={classes.addButton}>
