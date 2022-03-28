@@ -229,7 +229,12 @@ export default function Chain({ chain }) {
 
         {chain.projectURL && (
           <div className={classes.chainDescContainer}>
-            <Link href={chain.projectURL} align="center" classList="mb5">
+            <Link
+              href={chain.projectURL}
+              target="_blank"
+              align="center"
+              classlist="mb5"
+            >
               Visit project website
             </Link>
           </div>
