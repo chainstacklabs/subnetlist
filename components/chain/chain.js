@@ -151,9 +151,7 @@ export default function Chain({ chain }) {
           />
           <Tooltip title={chain.name}>
             <Typography variant="h3" className={classes.name} noWrap>
-              <a href={chain.infoURL} target="_blank" rel="noreferrer">
-                {chain.name}
-              </a>
+              {chain.name}
             </Typography>
           </Tooltip>
         </div>
@@ -212,36 +210,6 @@ export default function Chain({ chain }) {
             </div>
           </div>
         )}
-
-        {/* {chain.projectURL && (
-          <p>
-            Project site:
-            <IconButton
-              underline="hover"
-              href={chain.projectURL}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <LinkIcon />
-            </IconButton>
-          </p>
-        )} */}
-
-        {chain.projectURL && (
-          <div className={classes.chainDescContainer}>
-            <Link
-              href={chain.projectURL}
-              target="_blank"
-              align="center"
-              classlist="mb5"
-            >
-              Visit project website
-            </Link>
-          </div>
-        )}
-
-
-        {chain.projec}
 
         <div className={classes.addButton}>
           <Button variant="outlined" color="primary" onClick={addToNetwork}>
