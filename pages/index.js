@@ -15,6 +15,7 @@ import {
   TextField,
   InputAdornment,
   Paper,
+  Link,
 } from '@material-ui/core'
 import ToggleButton from '@material-ui/lab/ToggleButton'
 import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup'
@@ -176,6 +177,10 @@ function Home({ changeTheme, theme }) {
                 SubnetTech is an aggregator of Avalanche subnets and educational
                 resources around Avalanche subnets.
               </Typography>
+              <nav className={classes.navContainer}>
+                <Link href="/">Subnets</Link>
+                <Link href="/validators">Validators</Link>
+              </nav>
               <Button
                 size="large"
                 color="primary"
