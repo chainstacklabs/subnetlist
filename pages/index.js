@@ -145,13 +145,13 @@ function Home({ changeTheme, theme }) {
         <link rel="icon" href="/favicon.png" />
         <meta
           property="og:description"
-          content="Subnet.Tech is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."
+          content="subnet.tech is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."
         />
         <meta property="og:image" content="/og-image-new.jpeg" />
 
         <meta
           name="twitter:description"
-          content="Subnet.Tech is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."
+          content="subnet.tech is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."
         />
         <meta name="twitter:image" content="/og-image-new.jpeg" />
       </Head>
