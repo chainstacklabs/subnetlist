@@ -143,6 +143,17 @@ function Home({ changeTheme, theme }) {
       <Head>
         <title>Avalanche subnets list</title>
         <link rel="icon" href="/favicon.png" />
+        <meta
+          property="og:description"
+          content="subnet.tech is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."
+        />
+        <meta property="og:image" content="/og-image-new.jpeg" />
+
+        <meta
+          name="twitter:description"
+          content="subnet.tech is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."
+        />
+        <meta name="twitter:image" content="/og-image-new.jpeg" />
       </Head>
 
       <main className={styles.main}>
