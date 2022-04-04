@@ -123,11 +123,14 @@ function Validators({ changeTheme, theme }) {
             >
               <Header changeTheme={changeTheme} />
             </div>
-            <h2>List of validators</h2>
+            <Typography variant="h2" className={classes.subTitle}>
+              List of validators 📆 coming soon
+            </Typography>
 
             <Typography className={classes.subTitle}>
-              Here you'll find information about validators taking care of all
-              subnets and how to use them to secure your own subnet.
+              Here you'll find information about the validators taking care of
+              all different subnets and how to use them to secure your own
+              subnet.
             </Typography>
           </div>
         </div>
