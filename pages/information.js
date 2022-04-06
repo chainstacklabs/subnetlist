@@ -18,6 +18,7 @@ import {
   InputAdornment,
   Paper,
   Link,
+  ListItem,
 } from '@material-ui/core'
 import AddIcon from '@material-ui/icons/Add'
 
@@ -68,7 +69,7 @@ function Validators({ changeTheme, theme }) {
                 SubnetTech is an aggregator of Avalanche subnets and educational
                 resources around Avalanche subnets.
               </Typography>
-              <nav className={classes.navContainer}>
+              <nav className={classes.navContainer} >
                 <Link href="/">Subnets</Link>
                 <Link href="/validators">Validators</Link>
               </nav>
@@ -126,9 +127,34 @@ function Validators({ changeTheme, theme }) {
             <Typography variant="h2" className={classes.subTitle}>
               Subnets information
             </Typography>
-
+              
             <Typography className={classes.subTitle}>
-              Here you'll find information about subnets.
+            Every Avalanche blockchain is an instance of a Virtual Machine.  
+            For example, X-Chain is an instance of AVM and C-Chain is Subnet EVM's instance. 
+            </Typography>
+            <Typography className={classes.headerContainer}>Avalanche features 3 built-in blockchains: Exchange Chain (X-Chain), Platform Chain (P-Chain), and Contract Chain (C-Chain). All 3 blockchains are validated and secured by the Primary Network. The Primary Network is a special subnet, and all members of all custom subnets must also be a member of the Primary Network by staking at least 2,000 AVAX.</Typography>
+            <Typography >
+            Avalanche enables you to create a subnet (dynamic set of validators) which validate blockchain with default, configured or custom Virtual Machine. 
+            Each blockchain is validated by exactly one subnet, while a subnet can validate many blockchains. A node can be member of many subnets.
+            </Typography>
+            <Typography>
+            Moreover, you can create private subnet. It means that nodes will communicate with only each other within this subnet.
+            </Typography>
+
+            <Typography className={classes.navContainer}>
+            For more information you can see: 
+             <Link href="https://docs.avax.network/build/tutorials/platform/subnets"> docs.avax.network/build/tutorials/platform/subnets</Link>
+              </Typography>
+            
+            <Typography>
+            
+            Virtual Machine can be fully customized to provide any custom business logic.
+            
+            </Typography>
+
+            <Typography>
+              For your own VM you need to implement interface for compatibility with AvalancheGo. 
+              See: <Link href="https://docs.avax.network/build/tutorials/platform/subnets/create-a-virtual-machine-vm"> docs.avax.network/build/tutorials/platform/subnets/create-a-virtual-machine-vm.</Link> 
             </Typography>
           </div>
         </div>
