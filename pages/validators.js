@@ -22,6 +22,9 @@ import {
 import AddIcon from '@material-ui/icons/Add'
 
 import classes from './index.module.css'
+import Validator from '../components/validator'
+
+import validatorsList from '../components/validator/validators.json'
 
 function Validators({ changeTheme, theme }) {
   const addNetwork = () => {
@@ -132,6 +135,15 @@ function Validators({ changeTheme, theme }) {
               all different subnets and how to use them to secure your own
               subnet.
             </Typography>
+            <div className={classes.cardsContainer}>
+              {/* {onlyOpenToValidate === '0' && (
+                <AvaxSubnet closeAvaxsubnet={closeAvaxsubnet} />
+              )} */}
+              {validatorsList &&
+                validatorsList.map((val, idx) => {
+                  return <Validator validator={val} key={idx} />
+                })}{' '}
+            </div>
           </div>
         </div>
       </main>

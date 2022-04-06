@@ -1,0 +1,16 @@
+[
+  {
+    "nodeID": "NodeID213213214234324",
+    "description": "Some node ",
+    "openToValidate": false
+  },
+  {
+    "nodeID": "NodeID21999999913214234324",
+    "description": "Some other node ",
+    "openToValidate": true,
+    "contactDetails": {
+      "email": "",
+      "website": ""
+    }
+  }
+]
