@@ -8,27 +8,14 @@ import {
   ThemeProvider,
 } from '@material-ui/core/styles'
 import path from 'path'
-import {
-  Grid,
-  Typography,
-  Button,
-  TextField,
-  InputAdornment,
-  Paper,
-  Link,
-} from '@material-ui/core'
-import ToggleButton from '@material-ui/lab/ToggleButton'
-import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup'
+import { Typography, TextField, InputAdornment, Paper } from '@material-ui/core'
+
 import Chain from '../components/chain'
 import Sidebar from '../components/sidebar'
 import AvaxSubnet from '../components/avaxsubnet'
 import Header from '../components/header'
 
 import SearchIcon from '@material-ui/icons/Search'
-import AppsIcon from '@material-ui/icons/Apps'
-import ListIcon from '@material-ui/icons/List'
-import AddIcon from '@material-ui/icons/Add'
-import useSWR from 'swr'
 
 import classes from './index.module.css'
 

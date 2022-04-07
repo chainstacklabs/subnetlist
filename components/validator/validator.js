@@ -12,12 +12,8 @@ import {
 } from '@material-ui/core'
 export default function Validator({ validator }) {
   return (
-    <Paper
-      elevation={1}
-      className={classes.validatorContainer}
-      key={validator.nodeID}
-    >
-      <div className={classes.chainNameContainer}>
+    <Paper elevation={1} key={validator.nodeID}>
+      <div className={classes.validatorCard}>
         <Typography variant="h3" className={classes.name} noWrap>
           {validator.description}
         </Typography>

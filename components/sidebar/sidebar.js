@@ -9,12 +9,19 @@ import {
 } from '@material-ui/core'
 
 import classes from '../../pages/index.module.css'
-import AddIcon from '@material-ui/icons/Add'
+import AddIcon from '@material-ui/icons/AddCircle'
+import ValidatorIcon from '@material-ui/icons/AccountBalance'
 
 export default function Sidebar({}) {
   const addNetwork = () => {
     window.open(
       'https://github.com/akegaviar/subnet-tech#adding-a-subnet',
+      '_blank'
+    )
+  }
+  const addValidator = () => {
+    window.open(
+      'https://github.com/akegaviar/subnet-tech#adding-a-validator',
       '_blank'
     )
   }
@@ -35,18 +42,32 @@ export default function Sidebar({}) {
           <Link href="/">Subnets</Link>
           <Link href="/validators">Validators</Link>
         </nav>
-        <Button
-          size="large"
-          color="primary"
-          variant="contained"
-          className={classes.addNetworkButton}
-          onClick={addNetwork}
-          endIcon={<AddIcon />}
-        >
-          <Typography className={classes.buttonLabel}>
-            Add your subnet
-          </Typography>
-        </Button>
+        <div className={classes.navContainer}>
+          <Button
+            size="large"
+            color="primary"
+            variant="contained"
+            className={classes.addNetworkButton}
+            onClick={addNetwork}
+            startIcon={<AddIcon />}
+          >
+            <Typography className={classes.buttonLabel}>
+              Add your subnet
+            </Typography>
+          </Button>
+          <Button
+            size="large"
+            color="primary"
+            variant="contained"
+            className={classes.addNetworkButton}
+            onClick={addValidator}
+            startIcon={<ValidatorIcon />}
+          >
+            <Typography className={classes.buttonLabel}>
+              Add your validator
+            </Typography>
+          </Button>
+        </div>
         <div className={classes.socials}>
           <a
             className={`${classes.socialButton}`}
@@ -64,9 +85,6 @@ export default function Sidebar({}) {
               View source
             </Typography>
           </a>
-          <Typography variant="subtitle1" className={classes.version}>
-            Version 1.0.8
-          </Typography>
         </div>
       </div>
     </div>

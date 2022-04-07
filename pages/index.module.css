@@ -90,6 +90,17 @@
   padding: 0px 24px;
 }
 
+.validatorsContainer {
+  padding: 0px 80px;
+  display: grid;
+  grid-template-columns: calc(50% - 15px) calc(50% - 15px);
+  gap: 30px;
+  max-width: 1400px;
+  /* row-gap: 20px;
+  display: flex;
+  flex-direction: column; */
+}
+
 .cardsContainer {
   padding: 0px 80px;
   display: grid;
@@ -167,7 +178,8 @@
 }
 
 @media screen and (max-width: 1700px) {
-  .cardsContainer {
+  .cardsContainer,
+  .validatorsContainer {
     grid-template-columns: calc(50% - 15px) calc(50% - 15px);
   }
 }
@@ -186,7 +198,8 @@
     padding: 24px 48px 48px 48px;
   }
 
-  .cardsContainer {
+  .cardsContainer,
+  .validatorsContainer {
     padding: 0px 48px 48px;
   }
 }
@@ -240,7 +253,8 @@
   .copyContainer {
     text-align: center;
   }
-  .cardsContainer {
+  .cardsContainer,
+  .validatorsContainer {
     padding: 0 20px 20px;
   }
   .helpingParagraph {
@@ -260,7 +274,8 @@
   .version {
     padding-left: 0;
   }
-  .cardsContainer {
+  .cardsContainer,
+  .validatorsContainer {
     grid-template-columns: 100%;
   }
   .listContainer,
