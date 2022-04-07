@@ -29,18 +29,23 @@ export default function Sidebar({}) {
     <div className={classes.copyContainer}>
       <div className={classes.copyCentered}>
         <Typography variant="h1" className={classes.chainListSpacing}>
-          <span className={classes.helpingUnderline}>SubnetTechs</span>
+          <span className={classes.helpingUnderline}>subnet.tech</span>
         </Typography>
         <Typography variant="h2" className={classes.helpingParagraph}>
-          Connect to Avalanche subnets
+          Connect to all Avalanche subnets
         </Typography>
         <Typography className={classes.subTitle}>
-          SubnetTech is an aggregator of Avalanche subnets and educational
-          resources around Avalanche subnets.
+          subnet.tech is an{' '}
+          <strong>
+            aggregator of Avalanche subnets, projects, validators, and
+            educational resources
+          </strong>{' '}
+          around Avalanche subnets.
         </Typography>
         <nav className={classes.navContainer}>
           <Link href="/">Subnets</Link>
           <Link href="/validators">Validators</Link>
+          <Link href="/subnets-information">Info</Link>
         </nav>
         <div className={classes.navContainer}>
           <Button

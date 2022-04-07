@@ -1,15 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react'
 
 import classes from './validator.module.css'
-import {
-  Grid,
-  Typography,
-  Button,
-  TextField,
-  InputAdornment,
-  Paper,
-  Link,
-} from '@material-ui/core'
+import { Typography, Paper, Link } from '@material-ui/core'
 export default function Validator({ validator }) {
   return (
     <Paper elevation={1} key={validator.nodeID}>
@@ -19,9 +11,7 @@ export default function Validator({ validator }) {
         </Typography>
         <Typography>{validator.nodeID}</Typography>
         {validator.openToValidate && (
-          <Typography>
-            <a href={validator.contactDetails.email}>Contact</a>
-          </Typography>
+          <Link href={validator.contactDetails.email}>Contact</Link>
         )}
       </div>
     </Paper>
