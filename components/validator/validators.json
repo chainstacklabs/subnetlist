@@ -12,5 +12,14 @@
       "email": "",
       "website": ""
     }
+  },
+  {
+    "nodeID": "NodeID64598743753478659375834324",
+    "description": "Node from company ABC.Corp ",
+    "openToValidate": true,
+    "contactDetails": {
+      "email": "",
+      "website": ""
+    }
   }
 ]
