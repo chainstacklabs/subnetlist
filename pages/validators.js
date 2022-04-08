@@ -12,6 +12,7 @@ import {
 import path from 'path'
 import { Typography } from '@material-ui/core'
 import Sidebar from '../components/sidebar'
+import Validatorsad from '../components/validatorsad'
 
 import classes from './index.module.css'
 import Validator from '../components/validator'
@@ -19,11 +20,17 @@ import Validator from '../components/validator'
 import validatorsList from '../components/validator/validators.json'
 
 function Validators({ changeTheme, theme }) {
+  const [hideAvaxsubnet, setHideAvaxsubnet] = useState('1')
+
   const addNetwork = () => {
     window.open(
       'https://github.com/akegaviar/subnet-tech#adding-a-subnet',
       '_blank'
     )
+  }
+  const closeAvaxsubnet = (perma) => {
+    setHideAvaxsubnet('1')
+    localStorage.setItem('chainlist.org-hideAvaxsubnet', perma ? '1' : '0')
   }
   return (
     <div className={styles.container}>
@@ -87,6 +94,7 @@ function Validators({ changeTheme, theme }) {
               </Typography>
             </div>
             <div className={classes.validatorsContainer}>
+              <Validatorsad />
               {validatorsList &&
                 validatorsList.map((val, idx) => {
                   return <Validator validator={val} key={idx} />
