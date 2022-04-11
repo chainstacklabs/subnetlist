@@ -82,16 +82,17 @@ function Validators({ changeTheme, theme }) {
                   : classes.headerContainer
               }
             >
-              <Typography variant="h2" className={classes.subTitle}>
-                List of validators <br />
-                (coming soon)
-              </Typography>
+              <div>
+                <Typography variant="h2" className={classes.subTitle}>
+                  List of validators (coming soon)
+                </Typography>
 
-              <Typography className={classes.subTitle}>
-                Here you'll find information about the validators taking care of
-                all different subnets and how to contact them to secure your own
-                subnet.
-              </Typography>
+                <Typography className={classes.subTitle}>
+                  Here you'll find information about the validators taking care
+                  of all different subnets and how to contact them to secure
+                  your own subnet.
+                </Typography>
+              </div>
             </div>
             <div className={classes.validatorsContainer}>
               <Validatorsad />

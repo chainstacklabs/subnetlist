@@ -6,10 +6,16 @@ export default function Validator({ validator }) {
   return (
     <Paper elevation={1} key={validator.nodeID}>
       <div className={classes.validatorCard}>
-        <Typography variant="h3" className={classes.name} noWrap>
-          {validator.description}
+        <Typography variant="h3" className={classes.name}>
+          {validator.nodeID}
         </Typography>
-        <Typography>{validator.nodeID}</Typography>
+        <Typography>
+          💰 Total stake: {validator.totalStake} {''} AVAX
+        </Typography>
+        <Typography>
+          🧾 Fee: {validator.feePercentage}
+          {'%'} AVAX
+        </Typography>
         {validator.openToValidate && (
           <Link href={validator.contactDetails.email}>Contact</Link>
         )}

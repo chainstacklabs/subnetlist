@@ -1,25 +1,51 @@
 [
   {
-    "nodeID": "NodeID213213214234324",
+    "nodeID": "NodeID-FKGhEFYnHUdFadoR2ePvdTTM5Sz8tgjHp",
     "description": "Some node ",
+    "totalStake": 7391,
+    "feePercentage": 2,
     "openToValidate": false
   },
   {
-    "nodeID": "NodeID21999999913214234324",
-    "description": "Some other node ",
-    "openToValidate": true,
-    "contactDetails": {
-      "email": "",
-      "website": ""
-    }
+    "nodeID": "NodeID-5Uf5RUZ89pWtYj4Sgc7pxf1mkq2f4EEMW",
+    "description": "Some node ",
+    "totalStake": 23496,
+    "feePercentage": 2,
+    "openToValidate": false
   },
   {
-    "nodeID": "NodeID64598743753478659375834324",
-    "description": "Node from company ABC.Corp ",
-    "openToValidate": true,
-    "contactDetails": {
-      "email": "",
-      "website": ""
-    }
+    "nodeID": "NodeID-KQocfzJn3D4V4gBGPYsUB9Es7nT28Atvq",
+    "description": "Some node ",
+    "totalStake": 13683,
+    "feePercentage": 2,
+    "openToValidate": false
+  },
+  {
+    "nodeID": "NodeID-41mvUJUdqhRjP7pX9BB7R89PXkDhC7f7i",
+    "description": "Some node ",
+    "totalStake": 3197,
+    "feePercentage": 2,
+    "openToValidate": false
+  },
+  {
+    "nodeID": "NodeID-3kE1YV67tGPurH88UQc1itBixeEh28gUu",
+    "description": "Some node ",
+    "totalStake": 18259,
+    "feePercentage": 2,
+    "openToValidate": false
+  },
+  {
+    "nodeID": "NodeID-NvcQwEs2mXSvWyZxRssZMVsaqDxQxuBFQ",
+    "description": "Some node ",
+    "totalStake": 10177,
+    "feePercentage": 2,
+    "openToValidate": false
+  },
+  {
+    "nodeID": "NodeID-KLiUDfG672VocEHwbAwGxxFdCHovg1Zp5",
+    "description": "Some node ",
+    "totalStake": 9785,
+    "feePercentage": 2,
+    "openToValidate": false
   }
 ]
