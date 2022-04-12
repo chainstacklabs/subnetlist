@@ -35,18 +35,14 @@ export default function Sidebar({}) {
           Connect to all Avalanche subnets
         </Typography>
         <Typography className={classes.subTitle}>
-          subnet.tech is an{' '}
+          <strong className={classes.redText}>subnet.tech</strong> is an{' '}
           <strong>
             aggregator of Avalanche subnets, projects, validators, and
             educational resources
           </strong>{' '}
           around Avalanche subnets.
         </Typography>
-        <nav className={classes.navContainer}>
-          <Link href="/">Subnets</Link>
-          <Link href="/validators">Validators</Link>
-          <Link href="/subnets-information">Info</Link>
-        </nav>
+
         <div className={classes.navContainer}>
           <Button
             size="large"

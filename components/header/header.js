@@ -19,6 +19,7 @@ import {
 import stores from '../../stores'
 import { formatAddress, getProvider } from '../../utils'
 
+import Navigation from '../navigation/navigation'
 import classes from './header.module.css'
 
 const StyledSwitch = withStyles((theme) => ({
@@ -140,8 +141,7 @@ function Header(props) {
           </Button>
         </div>
       )}
-      {/* TODO: toggle to filter live subnets */}
-      {/* <Switch label="Include testnets" defaultChecked color="primary"></Switch> */}
+
       <div className={classes.themeSelectContainer}>
         <StyledSwitch
           icon={<Brightness2Icon className={classes.switchIcon} />}

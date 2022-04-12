@@ -10,7 +10,7 @@ export default function Validator({ validator }) {
   return (
     <Paper elevation={1} key={validator.nodeID}>
       <div className={classes.validatorCard}>
-        <Typography variant="h3" className={classes.name}>
+        <Typography variant="h3" className={classes.name} noWrap>
           {validator.nodeID}
         </Typography>
         <div className={classes.validatorInfoContainer}>

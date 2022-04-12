@@ -18,6 +18,7 @@ import classes from './index.module.css'
 import Validator from '../components/validator'
 
 import validatorsList from '../components/validator/validators.json'
+import Navigation from '../components/navigation/navigation'
 
 function Validators({ changeTheme, theme }) {
   const [hideAvaxsubnet, setHideAvaxsubnet] = useState('1')
@@ -73,26 +74,20 @@ function Validators({ changeTheme, theme }) {
                   : classes.headerContainer
               }
             >
+              <Navigation />
               <Header changeTheme={changeTheme} />
             </div>
-            <div
-              className={
-                theme.palette.type === 'dark'
-                  ? classes.headerContainerDark
-                  : classes.headerContainer
-              }
-            >
-              <div>
-                <Typography variant="h2" className={classes.subTitle}>
-                  List of validators (coming soon)
-                </Typography>
 
-                <Typography className={classes.subTitle}>
-                  Here you'll find information about the validators taking care
-                  of all different subnets and how to contact them to secure
-                  your own subnet.
-                </Typography>
-              </div>
+            <div>
+              <Typography variant="h2" paragraph>
+                List of validators
+              </Typography>
+
+              <Typography paragraph>
+                Here you'll find information about the validators taking care of
+                all different subnets and how to contact them to secure your own
+                subnet.
+              </Typography>
             </div>
             <div className={classes.validatorsContainer}>
               <Validatorsad />

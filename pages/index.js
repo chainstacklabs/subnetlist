@@ -22,6 +22,7 @@ import classes from './index.module.css'
 // Check in https://testnet.avascan.info/blockchains
 import subnetList from '../components/chain/subnets.json'
 import mainnetList from '../components/chain/chains.json'
+import Navigation from '../components/navigation/navigation'
 
 const searchTheme = createMuiTheme({
   palette: {
@@ -169,6 +170,7 @@ function Home({ changeTheme, theme }) {
                   : classes.headerContainer
               }
             >
+              <Navigation />
               <div className={classes.filterRow}>
                 <ThemeProvider theme={searchTheme}>
                   <Paper className={classes.searchPaper}>
@@ -176,7 +178,7 @@ function Home({ changeTheme, theme }) {
                       fullWidth
                       className={classes.searchContainer}
                       variant="outlined"
-                      placeholder=""
+                      placeholder="Swimmer..."
                       value={search}
                       onChange={onSearchChanged}
                       InputProps={{
