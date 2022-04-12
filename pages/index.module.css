@@ -49,6 +49,7 @@
     rgba(243, 243, 243, 0) 100%
   );
   padding: 24px 40px 48px 40px;
+
   z-index: 1;
 }
 
@@ -66,6 +67,7 @@
     rgba(35, 37, 46, 0) 100%
   );
   padding: 24px 40px 48px 40px;
+
   z-index: 1;
 }
 
@@ -102,6 +104,13 @@
   grid-template-columns: calc(33% - 15px) calc(33% - 15px) calc(33% - 15px);
   gap: 30px;
   max-width: 1400px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 20px;
 }
 
 .chainListSpacing {
@@ -289,6 +298,7 @@
   .subTitle {
     padding: 0 10px;
   }
+
   .socialButton {
     text-align: center;
     justify-content: center;
