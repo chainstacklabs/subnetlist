@@ -37,7 +37,10 @@
   padding-top: 24px;
   position: sticky;
   top: 0;
-  background: linear-gradient(rgba(243, 243, 243, 1) 90%, rgba(243, 243, 243, 0) 100%);
+  background: linear-gradient(
+    rgba(243, 243, 243, 1) 90%,
+    rgba(243, 243, 243, 0) 100%
+  );
   padding: 24px 80px 48px 80px;
   z-index: 1;
 }
@@ -51,7 +54,10 @@
   padding-top: 24px;
   position: sticky;
   top: 0;
-  background: linear-gradient(rgba(35, 37, 46, 1) 90%, rgba(35, 37, 46, 0) 100%);
+  background: linear-gradient(
+    rgba(35, 37, 46, 1) 90%,
+    rgba(35, 37, 46, 0) 100%
+  );
   padding: 24px 80px 48px 80px;
   z-index: 1;
 }
@@ -78,6 +84,13 @@
   grid-template-columns: calc(33% - 15px) calc(33% - 15px) calc(33% - 15px);
   gap: 30px;
   max-width: 1400px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 20px;
 }
 
 .chainListSpacing {
@@ -235,6 +248,7 @@
   .subTitle {
     padding: 0 10px;
   }
+
   .socialButton {
     text-align: center;
     justify-content: center;
