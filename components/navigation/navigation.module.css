@@ -1,0 +1,17 @@
+.navContainer {
+  display: flex;
+  margin: 10px 15px;
+  gap: 15px;
+}
+
+.navItem {
+  padding: 5px 10px;
+  font-size: 1.2rem !important;
+}
+
+/* @media screen and(max-width: 600px) {
+  .navContainer {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+} */
