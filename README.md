@@ -30,7 +30,7 @@ Subnet attributes details:
 
 ## Adding a validator
 
-If you're currently running your own validator and you're open to whitelist someone's subnet, you can create a PR including your details in the `` file as follows:
+If you're currently running your own validator and you're open to whitelist someone's subnet, you can create a PR including your details in the `components/validator/validator.json` file as follows:
 
 ```js
  {
