@@ -28,7 +28,7 @@ export default function Validator({ validator }) {
             </Typography>
           </div>
           {validator.openToValidate && (
-            <Link href={validator.contactDetails.email}>Contact</Link>
+            <Link href={validator.contactURL}>Contact</Link>
           )}
         </div>
       </div>

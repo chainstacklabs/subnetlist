@@ -30,7 +30,20 @@ Subnet attributes details:
 
 ## Adding a validator
 
-If you're currently running your own validator and you're open to whitelist someone's subnet, you can add your details here.
+If you're currently running your own validator and you're open to whitelist someone's subnet, you can create a PR including your details in the `` file as follows:
+
+```js
+ {
+    "nodeID": "NodeID-xxxxxxx", // your validator node id
+    "totalStake": 23496, // amount stacked in the validator
+    "feePercentage": 2, // validator fee
+    "openToValidate": true, // change to false if you just want to list your validator in the site
+    "contactURL": "" // link to a website contact page, discord or telegram
+
+  },
+```
+
+**Important**: we do not recommend to include an email address as a contact method to avoid spam.
 
 ## Getting Started
 
