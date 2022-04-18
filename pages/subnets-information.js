@@ -129,6 +129,8 @@ function Validators({ changeTheme, theme }) {
                 </ul>
               </Typography>
 
+              <img src="/subnets-diagram.jpeg" className={classes.diagram} />
+
               <Typography variant="h3" className={classes.subTitle}>
                 About customized blockchain
               </Typography>
