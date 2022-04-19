@@ -70,25 +70,13 @@ function Validators({ changeTheme, theme }) {
 
             <div className={classes.textContainer}>
               <Typography>
-                Compare with Ethereum, Avalanche, the 4th largest blockchains in
-                April 2022, is significantly improved in scalability and
-                throughput. Scalability wise,{' '}
-                <strong>
-                  subnets are the key feature making Avalanche stand out from
-                  its peers.
-                </strong>
+                The ability to create  <Link href="https://docs.avax.network/build/tutorials/platform/subnets/create-a-subnet/">subnets and custom blockchain networks</Link> is one of the key features of Avalanche.
               </Typography>
 
               <Typography>
-                Subnet is a feature that allows Avalanche users to{' '}
-                <Link href="https://docs.avax.network/build/tutorials/platform/subnets/create-a-subnet/">
-                  {' '}
-                  create and run their own blockchain
-                </Link>{' '}
-                and they are very flexible and customizables. A subnet can be
-                set to private, so its transactions are separated from the
-                primary network, which means they are not visible to other nodes
-                outside the subnet. Subnet chains can also be tuned to meet
+               Custom networks are very flexible and customizables. From being a one of the keys to scalability,
+               you can tune a network to your needs as a network creator. For example, you can make a network
+               private and have the transactions not visible to the nodes on the primary network, or you make it meet
                 different compliance requirements like{' '}
                 <Link href="https://docs.avax.network/learn/platform-overview/">
                   {' '}
@@ -109,21 +97,21 @@ function Validators({ changeTheme, theme }) {
                 of validators working together to achieve consensus on the state
                 of a set of blockchains. Each blockchain is validated by exactly
                 one subnet. A subnet can validate many blockchains. A node may
-                be a member of many subnets....”
+                be a member of many subnets.”
               </Typography>
 
               <Typography variant="body1">To extend on that:</Typography>
               <Typography variant="body1">
                 <ul>
                   <li>
-                    A subnet is not a blockchain, it is a set validator nodes,
+                    A subnet is not a blockchain, it is a set of validator nodes,
                     although the number can be zero.
                   </li>
                   <li>
                     When a subnet contains no validators, its state becomes not
                     validated and any blockchain on it stops functioning.
                   </li>
-                  <li>One validator node can be part of multiple subnets.</li>
+                  <li>One validator node can be a part of multiple subnets.</li>
                   <li>Subnets can be assigned to many blockchains.</li>
                   <li>One blockchain can only be validated by one subnet.</li>
                 </ul>
@@ -159,7 +147,7 @@ function Validators({ changeTheme, theme }) {
               </Typography>
 
               <Typography variant="body1">
-                Developers can create own blockchain by implement
+                Developers can create their own blockchain by implementing
                 <Link href="https://docs.avax.network/build/tutorials/platform/subnets/create-a-virtual-machine-vm">
                   {' '}
                   ChainVM{' '}
@@ -168,7 +156,7 @@ function Validators({ changeTheme, theme }) {
               </Typography>
               <Typography variant="body1">
                 Blockchain can be “hidden” from other non-relevant nodes by
-                configure every node in the subnet too.
+                configuring every node in the subnet.
               </Typography>
             </div>
           </div>
