@@ -36,7 +36,7 @@ function Validators({ changeTheme, theme }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Avalanche subnets list</title>
+        <title>Avalanche Validators list</title>
         <link rel="icon" href="/favicon.png" />
         <meta
           property="og:description"

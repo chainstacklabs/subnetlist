@@ -25,7 +25,7 @@ function Validators({ changeTheme, theme }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Avalanche Subnets Information</title>
+        <title>Avalanche Projects with Subnets</title>
         <link rel="icon" href="/favicon.png" />
         <meta
           property="og:description"
