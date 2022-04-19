@@ -18,7 +18,7 @@ export default function Project({ project }) {
         <Link href={project.website} target="_blank">
           Visit website
         </Link>
-        <p>{project.description}</p>
+        <Typography variant="body1">{project.description}</Typography>
       </div>
     </li>
   )

@@ -69,7 +69,7 @@ function Validators({ changeTheme, theme }) {
             </Typography>
 
             <div className={classes.textContainer}>
-              <Typography>
+              <Typography variant="body1">
                 The ability to create{' '}
                 <Link href="https://docs.avax.network/build/tutorials/platform/subnets/create-a-subnet/">
                   subnets and custom blockchain networks
@@ -77,7 +77,7 @@ function Validators({ changeTheme, theme }) {
                 is one of the key features of Avalanche.
               </Typography>
 
-              <Typography>
+              <Typography variant="body1">
                 Custom networks are very flexible and customizables. From being
                 a one of the keys to scalability, you can tune a network to your
                 needs as a network creator. For example, you can make a network
@@ -90,7 +90,7 @@ function Validators({ changeTheme, theme }) {
                 </Link>
               </Typography>
 
-              <Typography>
+              <Typography variant="body1">
                 The
                 <Link href="https://docs.avax.network/build/tutorials/platform/subnets/">
                   {' '}
