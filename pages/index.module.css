@@ -72,7 +72,9 @@
 }
 
 .diagram {
-  width: 900px;
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .listContainer {
@@ -114,7 +116,12 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding-top: 20px;
+  padding: 20px 5px;
+}
+
+.projectsList {
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .chainListSpacing {
