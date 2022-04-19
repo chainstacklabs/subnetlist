@@ -4,6 +4,8 @@ This is a fork of the [original network list by Anton Nell](https://github.com/a
 
 To add a subnet, fork this repo and add a new object in the `components/chain/subnets.json` file with the details below. Create a PR to merge your change into this repo and it'll automatically go live.
 
+**If you want your project to appear in the projects page, [check also how to add a project](#adding-a-project).**
+
 Subnet attributes details:
 
 ```js
@@ -44,6 +46,19 @@ If you're currently running your own validator and you're open to whitelist some
 ```
 
 **Important**: we do not recommend to include an email address as a contact method to avoid spam.
+
+## Adding a project
+
+If you want to submit your project so it appears in the projects page, create a pull request adding your project information in the `components/project/projects.json` file as follows:
+
+```js
+{
+    "name": "", // project name
+    "description": "",  // project description. One or two phrases
+    "logo": "/logos/xxx.jpg", // upload your project logo image to /public/logos/
+    "website": "" // project website
+  },
+```
 
 ## Getting Started
 

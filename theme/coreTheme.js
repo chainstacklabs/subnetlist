@@ -90,7 +90,7 @@ const coreTheme = {
       lineHeight: 1.7,
       ['@media (max-width:576px)']: {
         // eslint-disable-line no-useless-computed-key
-        fontSize: '0.8rem',
+        fontSize: '0.95rem',
       },
     },
   },

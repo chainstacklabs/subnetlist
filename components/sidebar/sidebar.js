@@ -34,7 +34,7 @@ export default function Sidebar({}) {
         <Typography variant="h2" className={classes.helpingParagraph}>
           Connect to all Avalanche subnets
         </Typography>
-        <Typography className={classes.subTitle}>
+        <Typography className={classes.subTitle} variant="h3">
           <strong className={classes.redText}>subnet.tech</strong> is an{' '}
           <strong>
             aggregator of Avalanche subnets, projects, validators, and
@@ -69,6 +69,7 @@ export default function Sidebar({}) {
             </Typography>
           </Button>
         </div>
+
         <div className={classes.socials}>
           <a
             className={`${classes.socialButton}`}

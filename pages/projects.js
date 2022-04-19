@@ -1,42 +1,31 @@
 import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
-import Header from '../components/header'
+import Header from '../components/header/header'
 
-import { useRouter } from 'next/router'
 import styles from '../styles/Home.module.css'
-import {
-  withTheme,
-  createMuiTheme,
-  ThemeProvider,
-} from '@material-ui/core/styles'
+import { withTheme } from '@material-ui/core/styles'
 import path from 'path'
-import { Typography } from '@material-ui/core'
+import { Typography, Link } from '@material-ui/core'
 import Sidebar from '../components/sidebar'
-import Validatorsad from '../components/validatorsad'
-
-import classes from './index.module.css'
-import Validator from '../components/validator'
-
-import validatorsList from '../components/validator/validators.json'
 import Navigation from '../components/navigation/navigation'
 
-function Validators({ changeTheme, theme }) {
-  const [hideAvaxsubnet, setHideAvaxsubnet] = useState('1')
+import classes from './index.module.css'
 
+import projectsList from '../components/project/projects.json'
+
+import Project from '../components/project'
+
+function Validators({ changeTheme, theme }) {
   const addNetwork = () => {
     window.open(
       'https://github.com/akegaviar/subnet-tech#adding-a-subnet',
       '_blank'
     )
   }
-  const closeAvaxsubnet = (perma) => {
-    setHideAvaxsubnet('1')
-    localStorage.setItem('chainlist.org-hideAvaxsubnet', perma ? '1' : '0')
-  }
   return (
     <div className={styles.container}>
       <Head>
-        <title>Avalanche subnets list</title>
+        <title>Avalanche Subnets Information</title>
         <link rel="icon" href="/favicon.png" />
         <meta
           property="og:description"
@@ -60,6 +49,7 @@ function Validators({ changeTheme, theme }) {
           }
         >
           <Sidebar />
+
           <div
             className={
               theme.palette.type === 'dark'
@@ -75,26 +65,40 @@ function Validators({ changeTheme, theme }) {
               }
             >
               <Navigation />
+
               <Header changeTheme={changeTheme} />
             </div>
+            <Typography variant="h2" paragraph className={classes.subTitle}>
+              Projects using subnets
+            </Typography>
 
             <div className={classes.textContainer}>
-              <Typography variant="h2" paragraph>
-                List of validators
+              <Typography>
+                Here you can find a{' '}
+                <strong>
+                  list of projects that have launched their own Avalanche subnet
+                </strong>{' '}
+                or that are planning to do it in the near future. If you're
+                working on a project that is not listed below and you want to
+                add it,{' '}
+                <Link
+                  href="https://github.com/akegaviar/subnet-tech"
+                  target="_blank"
+                >
+                  create a pull request in our repository
+                </Link>
+                . And if you want to{' '}
+                <strong>connect to any of these subnets</strong>, you can do it
+                from <Link href="/">the main page</Link>.
               </Typography>
 
-              <Typography paragraph>
-                Here you'll find information about the validators taking care of
-                all different subnets and how to contact them to secure your own
-                subnet.
+              <Typography variant="body1">
+                <ul className={classes.projectsList}>
+                  {projectsList.map((project, idx) => {
+                    return <Project project={project} key={idx} />
+                  })}
+                </ul>
               </Typography>
-            </div>
-            <div className={classes.validatorsContainer}>
-              <Validatorsad />
-              {validatorsList &&
-                validatorsList.map((val, idx) => {
-                  return <Validator validator={val} key={idx} />
-                })}{' '}
             </div>
           </div>
         </div>
@@ -102,5 +106,4 @@ function Validators({ changeTheme, theme }) {
     </div>
   )
 }
-
 export default withTheme(Validators)

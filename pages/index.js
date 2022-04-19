@@ -49,7 +49,7 @@ const searchTheme = createMuiTheme({
       '"Segoe UI Symbol"',
     ].join(','),
     body1: {
-      fontSize: '12px',
+      fontSize: '14px',
     },
   },
   overrides: {

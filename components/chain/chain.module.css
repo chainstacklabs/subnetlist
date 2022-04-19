@@ -61,3 +61,7 @@
   width: 100%;
   margin-bottom: 12px !important;
 }
+
+.badge {
+  z-index: 0;
+}

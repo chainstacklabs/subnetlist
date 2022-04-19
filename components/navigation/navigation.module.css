@@ -1,5 +1,7 @@
 .navContainer {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 10px 15px;
   gap: 15px;
 }

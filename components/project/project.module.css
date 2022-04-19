@@ -1,0 +1,26 @@
+.projectContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+  padding: 10px;
+}
+
+.logoContainer {
+  /* width: 30%; */
+}
+
+.projectLogo {
+  width: 300px;
+  /* width: 100%; */
+}
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+  .projectContainer {
+    flex-direction: column;
+  }
+}
