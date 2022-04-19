@@ -70,14 +70,20 @@ function Validators({ changeTheme, theme }) {
 
             <div className={classes.textContainer}>
               <Typography>
-                The ability to create  <Link href="https://docs.avax.network/build/tutorials/platform/subnets/create-a-subnet/">subnets and custom blockchain networks</Link> is one of the key features of Avalanche.
+                The ability to create{' '}
+                <Link href="https://docs.avax.network/build/tutorials/platform/subnets/create-a-subnet/">
+                  subnets and custom blockchain networks
+                </Link>{' '}
+                is one of the key features of Avalanche.
               </Typography>
 
               <Typography>
-               Custom networks are very flexible and customizables. From being a one of the keys to scalability,
-               you can tune a network to your needs as a network creator. For example, you can make a network
-               private and have the transactions not visible to the nodes on the primary network, or you make it meet
-                different compliance requirements like{' '}
+                Custom networks are very flexible and customizables. From being
+                a one of the keys to scalability, you can tune a network to your
+                needs as a network creator. For example, you can make a network
+                private and have the transactions not visible to the nodes on
+                the primary network, or you make it meet different compliance
+                requirements like{' '}
                 <Link href="https://docs.avax.network/learn/platform-overview/">
                   {' '}
                   geographical bounds and KYC/AML checks.{' '}
@@ -104,8 +110,8 @@ function Validators({ changeTheme, theme }) {
               <Typography variant="body1">
                 <ul>
                   <li>
-                    A subnet is not a blockchain, it is a set of validator nodes,
-                    although the number can be zero.
+                    A subnet is not a blockchain, it is a set of validator
+                    nodes, although the number can be zero.
                   </li>
                   <li>
                     When a subnet contains no validators, its state becomes not
@@ -117,7 +123,16 @@ function Validators({ changeTheme, theme }) {
                 </ul>
               </Typography>
 
-              <img src="/subnets-diagram.jpeg" className={classes.diagram} />
+              <a
+                href="/subnets-diagram-new.png"
+                target="_blank"
+                className={classes.diagram}
+              >
+                <img
+                  src="/subnets-diagram-new.png"
+                  className={classes.diagram}
+                />
+              </a>
 
               <Typography variant="h3" className={classes.subTitle}>
                 About customized blockchain
