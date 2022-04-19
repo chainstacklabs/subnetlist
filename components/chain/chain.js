@@ -130,7 +130,11 @@ export default function Chain({ chain }) {
   }
 
   return (
-    <Badge badgeContent={renderBadgeLabel()} color={netColor()}>
+    <Badge
+      badgeContent={renderBadgeLabel()}
+      color={netColor()}
+      className={classes.badge}
+    >
       <Paper
         elevation={1}
         className={classes.chainContainer}
