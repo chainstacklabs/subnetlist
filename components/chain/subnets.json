@@ -3,7 +3,6 @@
     "name": "DFK Chain",
     "chain": "DFK",
     "description": "Subnet for DefiKingdoms project, a Defi protocol/NFT game running on Avalanche & Harmony.",
-
     "isLive": true,
     "rpc": [
       "https://api-dfk.avax.network/rpc"
@@ -53,7 +52,33 @@
         "standard": "none"
       }
     ]
-
+  },
+  {
+    "name": "Swimmer Network",
+    "title": "Swimmer Network",
+    "description": "Subnet created for the Crabada project, a play and earn idle game.",
+    "projectURL": "https://www.crabada.com/",
+    "chain": "Swimmer Network Subnet",
+    "isLive": true,
+    "rpc": [
+      "https://rpc.swimmer.network/ext/bc/2K33xS9AyP9oCDiHYKVrHe7F54h2La5D8erpTChaAhdzeSu2RX/rpc"
+    ],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "TUS",
+      "symbol": "TUS",
+      "decimals": 18
+    },
+    "shortName": "swimmer-mainnet",
+    "chainId": 73772,
+    "networkId": 73772,
+    "explorers": [
+      {
+        "name": "Swimmer explorer",
+        "url": "https://explorer.swimmer.network/",
+        "standard": "EIP3091"
+      }
+    ]
   },
   {
     "name": "Swimmer Testnet",
@@ -69,8 +94,8 @@
       "https://faucet.swimmer.network/"
     ],
     "nativeCurrency": {
-      "name": "TUS.e",
-      "symbol": "TUS.e",
+      "name": "TUS",
+      "symbol": "TUS",
       "decimals": 18
     },
     "shortName": "swimmer-test",
