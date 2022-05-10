@@ -65,9 +65,61 @@ function Validators({ changeTheme, theme }) {
               <Header changeTheme={changeTheme} />
             </div>
             <Typography variant="h2" paragraph className={classes.subTitle}>
+              Step-by-step tutorial
+            </Typography>
+            <div className={classes.textContainer}>
+              <Typography variant="body1">
+                Make sure to check the Subnet series articles in the Chainstack
+                blog:
+              </Typography>
+              <Typography variant="body1">
+                <ul>
+                  <li>
+                    <Link
+                      target="_blank"
+                      href="https://chainstack.com/avalanche-subnet-tutorial-what-is-the-subnet/"
+                    >
+                      What is a subnet
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      target="_blank"
+                      href="https://chainstack.com/avalanche-subnet-tutorial-series-running-a-local-avalanche-node-on-fuji-testnet/"
+                    >
+                      Running a local Avalanche node on Fuji testnet
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      target="_blank"
+                      href="https://chainstack.com/avalanche-subnet-tutorial-series-creating-subnet-then-create-a-blockchain-on-it/"
+                    >
+                      Creating a subnet, then create a blockchain on it
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      target="_blank"
+                      href="https://chainstack.com/avalanche-subnet-tutorial-series-deploying-a-smart-contract/"
+                    >
+                      Deploying a smart contract to a subnet
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      target="_blank"
+                      href="https://chainstack.com/avalanche-subnet-tutorial-series-indexing-subnet-with-the-graph/"
+                    >
+                      Indexing a subnet with The Graph
+                    </Link>
+                  </li>
+                </ul>
+              </Typography>
+            </div>
+            <Typography variant="h2" paragraph className={classes.subTitle}>
               Subnets information
             </Typography>
-
             <div className={classes.textContainer}>
               <Typography variant="body1">
                 The ability to create{' '}
