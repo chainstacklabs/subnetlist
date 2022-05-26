@@ -22,5 +22,11 @@
     "description": "Profits To The People! An active portfolio management Fair Open Access Marketplace x passive investing platform on Avalanche.",
     "logo": "/logos/prospero-logo-sm.jpeg",
     "website": "https://www.prospero.fund/"
+  },
+  {
+    "name": "Rise of the Warbots",
+    "description": "Rise of the Warbots is a PVP Play-to-Earn NFT gaming experience, set in a post-apocalyptic world where players face off against each other.",
+    "logo": "/logos/rotw-logo.png",
+    "website": "https://riseofthewarbots.com/"
   }
 ]
