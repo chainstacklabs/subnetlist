@@ -132,5 +132,27 @@
       "https://api-wagmi.avax-test.network/rpc"
     ],
     "infoURL": "https://github.com/ava-labs/"
+  },
+  {
+    "name": "Rise of the Warbots",
+    "chain": "Rise of the Warbots Testnet",
+    "title": "Rise of the Warbots Testnet",
+    "description": "Subnet created for Rise of the Warbots, a PVP Play-to-Earn NFT gaming experience, set in a post-apocalyptic world where players face off against each other.",
+    "projectURL": "https://riseofthewarbots.com",
+    "isLive": false,
+    "nativeCurrency": {
+      "name": "Nano Machines",
+      "symbol": "NMAC",
+      "decimals": 18
+    },
+    "chainId": 13213,
+    "networkId": 13213,
+    "blockchain": "bN6SQaHnYRefSPjivCTzw7kyBTBR6b9tzZbcQuKQqZC2E32s1",
+    "subnetId": "jSRFApuLheiSfiZAb6Rdk7oYaLfhDY9kPRnYBW5m2oUqrT5gA",
+    "faucets": [],
+    "rpc": [
+      "https://testnet.riseofthewarbots.com/subnet/rpc"
+    ],
+    "infoURL": "https://riseofthewarbots.com"
   }
 ]
