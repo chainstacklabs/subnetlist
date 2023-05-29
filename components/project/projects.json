@@ -2,31 +2,31 @@
   {
     "name": "DeFi Kingdoms",
     "description": "DeFi Kingdoms is a cross-chain, play-to-earn MMORPG built on a strong DeFi protocol. The game features DEXs, liquidity pool opportunities, and a market of rare, utility-driven NFTs, which all together create a beautiful, immersive online world in the incredibly nostalgic form of fantasy pixel art.",
-    "logo": "/logos/DFK-logo-sm.jpeg",
+    "logo": "/subnet-tech/logos/DFK-logo-sm.jpeg",
     "website": "https://defikingdoms.com/"
   },
   {
     "name": "Crabada",
     "description": "Crabada is an Undersea world filled with fierce fighting Hermit-Crabs called Crabada. Crabada can be bred, and used in games to earn cryptocurrencies with real value.",
-    "logo": "/logos/crabada-logo-sm.jpeg",
+    "logo": "/subnet-tech/logos/crabada-logo-sm.jpeg",
     "website": "https://www.crabada.com/"
   },
   {
     "name": "Ascenders",
     "description": "Ascenders combines a story-driven open world with a fully decentralized, player driven crypto economy to deliver a totally new ARPG experience. Built on the Avalanche network, Ascenders features a dual token economy and player created NFTs, and is one of the first major games to leverage the power and flexibility of AVAX subnets.",
-    "logo": "/logos/ascenders-logo-sm.jpeg",
+    "logo": "/subnet-tech/logos/ascenders-logo-sm.jpeg",
     "website": "https://www.ascenders.gg/"
   },
   {
     "name": "Prospero DeFi",
     "description": "Profits To The People! An active portfolio management Fair Open Access Marketplace x passive investing platform on Avalanche.",
-    "logo": "/logos/prospero-logo-sm.jpeg",
+    "logo": "/subnet-tech/logos/prospero-logo-sm.jpeg",
     "website": "https://www.prospero.fund/"
   },
   {
     "name": "Rise of the Warbots",
     "description": "Rise of the Warbots is a PVP Play-to-Earn NFT gaming experience, set in a post-apocalyptic world where players face off against each other.",
-    "logo": "/logos/rotw-logo.png",
+    "logo": "/subnet-tech/logos/rotw-logo.png",
     "website": "https://riseofthewarbots.com/"
   }
 ]

@@ -176,12 +176,12 @@ function Validators({ changeTheme, theme }) {
               </Typography>
 
               <a
-                href="/subnets-diagram-new.png"
+                href="/subnet-tech/subnets-diagram-new.png"
                 target="_blank"
                 className={classes.diagram}
               >
                 <img
-                  src="/subnets-diagram-new.png"
+                  src="/subnet-tech/subnets-diagram-new.png"
                   className={classes.diagram}
                 />
               </a>
