@@ -15,7 +15,7 @@ export default function Validator({}) {
     <Paper elevation={1} className={classes.validatorAdCard}>
       <div className={classes.topInfo}>
         <img
-          src="/chainstack-subnet.png"
+          src="/subnet-tech/chainstack-subnet.png"
           width={64}
           height={64}
           className={classes.avatar}

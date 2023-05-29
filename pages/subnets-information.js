@@ -22,7 +22,7 @@ function Validators({ changeTheme, theme }) {
     <div className={styles.container}>
       <Head>
         <title>Avalanche Subnets Information</title>
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/subnet-tech/favicon.png" />
         <meta
           property="og:description"
           content="subnet.tech is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."

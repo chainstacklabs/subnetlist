@@ -74,7 +74,7 @@ export default function Avaxsubnet({ closeAvaxsubnet }) {
       <ThemeProvider theme={theme}>
         <div className={classes.topInfo}>
           <img
-            src="/chainstack-subnet.png"
+            src="/subnet-tech/chainstack-subnet.png"
             width={126}
             height={126}
             className={classes.avatar}
