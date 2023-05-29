@@ -18,7 +18,7 @@ import Project from '../components/project'
 function Validators({ changeTheme, theme }) {
   const addNetwork = () => {
     window.open(
-      'https://github.com/akegaviar/subnet-tech#adding-a-subnet',
+      'https://github.com/chainstacklabs/subnet-tech#adding-a-subnet',
       '_blank'
     )
   }
@@ -82,7 +82,7 @@ function Validators({ changeTheme, theme }) {
                 working on a project that is not listed below and you want to
                 add it,{' '}
                 <Link
-                  href="https://github.com/akegaviar/subnet-tech"
+                  href="https://github.com/chainstacklabs/subnet-tech"
                   target="_blank"
                 >
                   create a pull request in our repository

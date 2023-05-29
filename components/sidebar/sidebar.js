@@ -15,13 +15,13 @@ import ValidatorIcon from '@material-ui/icons/AccountBalance'
 export default function Sidebar({}) {
   const addNetwork = () => {
     window.open(
-      'https://github.com/akegaviar/subnet-tech#adding-a-subnet',
+      'https://github.com/chainstacklabs/subnet-tech#adding-a-subnet',
       '_blank'
     )
   }
   const addValidator = () => {
     window.open(
-      'https://github.com/akegaviar/subnet-tech#adding-a-validator',
+      'https://github.com/chainstacklabs/subnet-tech#adding-a-validator',
       '_blank'
     )
   }
@@ -73,7 +73,7 @@ export default function Sidebar({}) {
         <div className={classes.socials}>
           <a
             className={`${classes.socialButton}`}
-            href="https://github.com/akegaviar/subnet-tech"
+            href="https://github.com/chainstacklabs/subnet-tech"
             target="_blank"
             rel="noopener noreferrer"
           >

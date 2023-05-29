@@ -109,7 +109,7 @@ function Home({ changeTheme, theme }) {
 
   const addNetwork = () => {
     window.open(
-      'https://github.com/akegaviar/subnet-tech#adding-a-subnet',
+      'https://github.com/chainstacklabs/subnet-tech#adding-a-subnet',
       '_blank'
     )
   }
