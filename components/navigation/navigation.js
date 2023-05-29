@@ -13,7 +13,7 @@ export default function Navigation() {
         variant="text"
         color="primary"
         startIcon={<RouterOutlinedIcon />}
-        href="/"
+        href="/subnet-tech/"
         className={classes.navItem}
       >
         Subnets
@@ -22,7 +22,7 @@ export default function Navigation() {
         variant="text"
         color="primary"
         startIcon={<ValidatorIcon />}
-        href="/validators"
+        href="/subnet-tech/validators"
         className={classes.navItem}
       >
         Validators
@@ -31,7 +31,7 @@ export default function Navigation() {
         variant="text"
         color="primary"
         startIcon={<ClearAllIcon />}
-        href="/projects"
+        href="/subnet-tech/projects"
         className={classes.navItem}
       >
         Projects
@@ -40,7 +40,7 @@ export default function Navigation() {
         variant="text"
         color="primary"
         startIcon={<InfoOutlinedIcon />}
-        href="/subnets-information"
+        href="/subnet-tech/subnets-information"
         className={classes.navItem}
       >
         Resources
