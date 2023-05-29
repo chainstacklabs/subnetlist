@@ -119,7 +119,7 @@ export default function Chain({ chain }) {
   }
 
   const icon = useMemo(() => {
-    return chain.isMain ? `/favicon.png` : `chains/unknown-logo.png`
+    return chain.isMain ? `/subnet-tech/favicon.png` : `/subnet-tech/chains/unknown-logo.png`
     // return chain.chainSlug
     //   ? `https://subnet.tech/chain-icons/rsz_${chain.chainSlug}.jpg`
     //   : '/unknown-logo.png'
