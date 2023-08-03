@@ -1,7 +1,8 @@
 {
-  "name": "networklist",
+  "name": "subnetlist",
   "version": "1.0.0",
-  "private": true,
+  "homepage": "https://subnetlist.org/",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
