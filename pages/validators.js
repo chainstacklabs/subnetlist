@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 import styles from '../styles/Home.module.css'
 import {
   withTheme,
-  createMuiTheme,
+  createTheme,
   ThemeProvider,
 } from '@material-ui/core/styles'
 import path from 'path'
@@ -25,7 +25,7 @@ function Validators({ changeTheme, theme }) {
 
   const addNetwork = () => {
     window.open(
-      'https://github.com/chainstacklabs/subnet-tech#adding-a-subnet',
+      'https://github.com/chainstacklabs/subnetlist#adding-a-subnet',
       '_blank'
     )
   }
@@ -37,18 +37,18 @@ function Validators({ changeTheme, theme }) {
     <div className={styles.container}>
       <Head>
         <title>Avalanche Validators list</title>
-        <link rel="icon" href="/subnet-tech/favicon.png" />
+        <link rel="icon" href="/favicon.png" />
         <meta
           property="og:description"
-          content="subnet.tech is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."
+          content="Subnet List is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."
         />
-        <meta property="og:image" content="/og-image-new.jpeg" />
+        <meta property="og:image" content="/og-image.png" />
 
         <meta
           name="twitter:description"
-          content="subnet.tech is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."
+          content="Subnet List is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."
         />
-        <meta name="twitter:image" content="/og-image-new.jpeg" />
+        <meta name="twitter:image" content="/og-image.png" />
       </Head>
 
       <main className={styles.main}>

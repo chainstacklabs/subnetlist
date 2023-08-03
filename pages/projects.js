@@ -18,7 +18,7 @@ import Project from '../components/project'
 function Validators({ changeTheme, theme }) {
   const addNetwork = () => {
     window.open(
-      'https://github.com/chainstacklabs/subnet-tech#adding-a-subnet',
+      'https://github.com/chainstacklabs/subnetlist#adding-a-subnet',
       '_blank'
     )
   }
@@ -26,18 +26,18 @@ function Validators({ changeTheme, theme }) {
     <div className={styles.container}>
       <Head>
         <title>Avalanche Projects with Subnets</title>
-        <link rel="icon" href="/subnet-tech/favicon.png" />
+        <link rel="icon" href="/favicon.png" />
         <meta
           property="og:description"
-          content="subnet.tech is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."
+          content="Subnet List is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."
         />
-        <meta property="og:image" content="/og-image-new.jpeg" />
+        <meta property="og:image" content="/og-image.png" />
 
         <meta
           name="twitter:description"
-          content="subnet.tech is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."
+          content="Subnet List is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."
         />
-        <meta name="twitter:image" content="/og-image-new.jpeg" />
+        <meta name="twitter:image" content="/og-image.png" />
       </Head>
 
       <main className={styles.main}>
@@ -82,7 +82,7 @@ function Validators({ changeTheme, theme }) {
                 working on a project that is not listed below and you want to
                 add it,{' '}
                 <Link
-                  href="https://github.com/chainstacklabs/subnet-tech"
+                  href="https://github.com/chainstacklabs/subnetlist"
                   target="_blank"
                 >
                   create a pull request in our repository

@@ -2,31 +2,25 @@
   {
     "name": "DeFi Kingdoms",
     "description": "DeFi Kingdoms is a cross-chain, play-to-earn MMORPG built on a strong DeFi protocol. The game features DEXs, liquidity pool opportunities, and a market of rare, utility-driven NFTs, which all together create a beautiful, immersive online world in the incredibly nostalgic form of fantasy pixel art.",
-    "logo": "/subnet-tech/logos/DFK-logo-sm.jpeg",
+    "logo": "/logos/dfk.jpg",
     "website": "https://defikingdoms.com/"
   },
   {
-    "name": "Crabada",
-    "description": "Crabada is an Undersea world filled with fierce fighting Hermit-Crabs called Crabada. Crabada can be bred, and used in games to earn cryptocurrencies with real value.",
-    "logo": "/subnet-tech/logos/crabada-logo-sm.jpeg",
-    "website": "https://www.crabada.com/"
+    "name": "Dexalot",
+    "description": "Dexalot is a decentralized exchange platform that allows users to trade various cryptocurrencies in a secure and efficient manner.",
+    "logo": "/logos/dexalot.jpg",
+    "website": "https://dexalot.com/"
   },
   {
-    "name": "Ascenders",
-    "description": "Ascenders combines a story-driven open world with a fully decentralized, player driven crypto economy to deliver a totally new ARPG experience. Built on the Avalanche network, Ascenders features a dual token economy and player created NFTs, and is one of the first major games to leverage the power and flexibility of AVAX subnets.",
-    "logo": "/subnet-tech/logos/ascenders-logo-sm.jpeg",
-    "website": "https://www.ascenders.gg/"
+    "name": "PLAYA3ULL Games",
+    "description": "PLAYA3ULL Games is a game development studio that creates innovative and immersive gaming experiences for players around the world.",
+    "logo": "/logos/playa3ull.jpg",
+    "website": "https://playa3ull.games/"
   },
   {
-    "name": "Prospero DeFi",
-    "description": "Profits To The People! An active portfolio management Fair Open Access Marketplace x passive investing platform on Avalanche.",
-    "logo": "/subnet-tech/logos/prospero-logo-sm.jpeg",
-    "website": "https://www.prospero.fund/"
-  },
-  {
-    "name": "Rise of the Warbots",
-    "description": "Rise of the Warbots is a PVP Play-to-Earn NFT gaming experience, set in a post-apocalyptic world where players face off against each other.",
-    "logo": "/subnet-tech/logos/rotw-logo.png",
-    "website": "https://riseofthewarbots.com/"
+    "name": "Shrapnel",
+    "description": "Shrapnel is a multiplayer first-person shooter game with realistic graphics and intense gameplay. Join the battle and prove your skills!",
+    "logo": "/logos/shrapnel.png",
+    "website": "https://www.shrapnel.com/"
   }
 ]

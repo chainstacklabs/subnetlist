@@ -2,10 +2,10 @@
   {
     "name": "DFK Chain",
     "chain": "DFK",
-    "description": "Subnet for DefiKingdoms project, a Defi protocol/NFT game running on Avalanche & Harmony.",
+    "description": "Subnet for DefiKingdoms project, a Defi protocol/NFT game running on Avalanche & Klaytn.",
     "isLive": true,
     "rpc": [
-      "https://api-dfk.avax.network/rpc"
+      "https://subnets.avax.network/defi-kingdoms/dfk-chain/rpc"
     ],
     "faucets": [],
     "nativeCurrency": {
@@ -13,146 +13,156 @@
       "symbol": "JEWEL",
       "decimals": 18
     },
-    "projectURL": "https://defikingdoms.com",
-    "shortName": "DFK",
+    "projectURL": "https://defikingdoms.com/",
+    "shortName": "dfk",
     "chainId": 53935,
     "networkId": 53935,
     "explorers": [
       {
         "name": "ethernal",
-        "url": "https://explorer.dfkchain.com",
+        "url": "https://avascan.info/blockchain/dfk/home",
         "icon": "ethereum",
         "standard": "none"
       }
     ]
   },
   {
-    "name": "DFK Chain Test",
+    "name": "DFK Chain Testnet",
     "chain": "DFK",
-    "description": "Test subnet for DefiKingdoms project, a Defi protocol/NFT game running on Avalanche & Harmony.",
+    "description": "Test subnet for DefiKingdoms project, a Defi protocol/NFT game running on Avalanche & Klaytn.",
     "isLive": false,
     "rpc": [
-      "https://api-dfk.avax-test.network/rpc"
+      "https://subnets.avax.network/defi-kingdoms/dfk-chain-testnet/rpc"
     ],
-    "faucets": [],
+    "faucets": [
+      "https://core.app/tools/testnet-faucet/?subnet=dfk"
+    ],
     "nativeCurrency": {
       "name": "Jewel",
       "symbol": "JEWEL",
       "decimals": 18
     },
     "projectURL": "https://defikingdoms.com",
-    "shortName": "DFKTEST",
+    "shortName": "dfk-testnet",
     "chainId": 335,
     "networkId": 335,
     "explorers": [
       {
         "name": "ethernal",
-        "url": "https://explorer-test.dfkchain.com",
+        "url": "https://subnets-test.avax.network/defi-kingdoms",
         "icon": "ethereum",
         "standard": "none"
       }
     ]
   },
   {
-    "name": "Swimmer Network",
-    "title": "Swimmer Network",
-    "description": "Subnet created for the Crabada project, a play and earn idle game.",
-    "projectURL": "https://www.crabada.com/",
-    "chain": "Swimmer Network Subnet",
-    "isLive": true,
-    "rpc": [
-      "https://rpc.swimmer.network/ext/bc/2K33xS9AyP9oCDiHYKVrHe7F54h2La5D8erpTChaAhdzeSu2RX/rpc"
-    ],
-    "faucets": [],
-    "nativeCurrency": {
-      "name": "TUS",
-      "symbol": "TUS",
-      "decimals": 18
-    },
-    "shortName": "swimmer-mainnet",
-    "chainId": 73772,
-    "networkId": 73772,
-    "explorers": [
-      {
-        "name": "Swimmer explorer",
-        "url": "https://explorer.swimmer.network/",
-        "standard": "EIP3091"
-      }
-    ]
-  },
-  {
-    "name": "Swimmer Testnet",
-    "title": "Swimmer Testnet",
-    "description": "Subnet created for the Crabada project, a play and earn idle game.",
-    "projectURL": "https://www.crabada.com/",
-    "chain": "Swimmer Test Subnet",
+    "name": "WAGMI Subnet",
+    "chain": "WAGMI",
+    "description": "Test subnet created by Avalanche used to experiment with release candidates before they make it into an official coreth release.",
     "isLive": false,
     "rpc": [
-      "https://testnet-rpc.swimmer.network/ext/bc/2Sk6j8TYVQc2oR1TtUz64EWHAYjDUoDQ4hpbu6FMN2JBKC77xa/rpc"
+      "https://subnets.avax.network/wagmi/wagmi-chain-testnet/rpc"
     ],
     "faucets": [
-      "https://faucet.swimmer.network/"
+      "https://core.app/tools/testnet-faucet/?subnet=wagmi"
     ],
-    "nativeCurrency": {
-      "name": "TUS",
-      "symbol": "TUS",
-      "decimals": 18
-    },
-    "shortName": "swimmer-test",
-    "chainId": 73771,
-    "networkId": 73771,
-    "explorers": [
-      {
-        "name": "Swimmer explorer",
-        "url": "https://testnet-explorer.swimmer.network/",
-        "standard": "EIP3091"
-      }
-    ]
-  },
-  {
-    "name": "WAGMI ",
-    "chain": "WAGMI Subnet",
-    "title": "WAGMI Subnet",
-    "description": "Test subnet created by Avalanche used to experiment with release candidates before they make it into an official coreth release.",
-    "projectURL": "https://ava-labs-inc.metabaseapp.com/public/dashboard/15e33581-113a-4671-87f9-766d98e8d4e9#refresh=60",
-    "isLive": false,
     "nativeCurrency": {
       "name": "WAGMI",
       "symbol": "WGM",
       "decimals": 18
     },
+    "projectURL": "https://docs.avax.network/build/subnet/info/wagmi",
+    "shortName": "wagmi",
     "chainId": 11111,
     "networkId": 11111,
-    "blockchain": "2ebCneCbwthjQ1rYT41nhd7M76Hc6YmosMAQrTFhBq8qeqh6tt",
-    "subnetId": "28nrH5T2BMvNrWecFcV3mfccjs6axM1TVyqe79MCv2Mhs8kxiY",
-    "faucets": [
-      "https://faucet.trywagmi.xyz/"
-    ],
-    "rpc": [
-      "https://api-wagmi.avax-test.network/rpc"
-    ],
-    "infoURL": "https://github.com/ava-labs/"
+    "explorers": [
+      {
+        "name": "ethernal",
+        "url": "https://subnets-test.avax.network/wagmi",
+        "icon": "ethereum",
+        "standard": "none"
+      }
+    ]
   },
   {
-    "name": "Rise of the Warbots",
-    "chain": "Rise of the Warbots Testnet",
-    "title": "Rise of the Warbots Testnet",
-    "description": "Subnet created for Rise of the Warbots, a PVP Play-to-Earn NFT gaming experience, set in a post-apocalyptic world where players face off against each other.",
-    "projectURL": "https://riseofthewarbots.com",
-    "isLive": false,
+    "name": "Dexalot Subnet",
+    "chain": "Dexalot",
+    "description": "Subnet for Dexalot project, a decentralized exchange running on Avalanche.",
+    "isLive": true,
+    "rpc": [
+      "https://subnets.avax.network/dexalot/mainnet/rpc"
+    ],
+    "faucets": [],
     "nativeCurrency": {
-      "name": "Nano Machines",
-      "symbol": "NMAC",
+      "name": "Dexalot",
+      "symbol": "ALOT",
       "decimals": 18
     },
-    "chainId": 13213,
-    "networkId": 13213,
-    "blockchain": "bN6SQaHnYRefSPjivCTzw7kyBTBR6b9tzZbcQuKQqZC2E32s1",
-    "subnetId": "jSRFApuLheiSfiZAb6Rdk7oYaLfhDY9kPRnYBW5m2oUqrT5gA",
-    "faucets": [],
+    "projectURL": "https://dexalot.com/",
+    "shortName": "dexalot",
+    "chainId": 432204,
+    "networkId": 432204,
+    "explorers": [
+      {
+        "name": "ethernal",
+        "url": "https://avascan.info/blockchain/dexalot/home",
+        "icon": "ethereum",
+        "standard": "none"
+      }
+    ]
+  },
+  {
+    "name": "PLAYA3ULL Subnet",
+    "chain": "PLAYA3ULL",
+    "description": "Subnet for PLAYA3ULL Games project, a gaming platform running on Avalanche.",
+    "isLive": true,
     "rpc": [
-      "https://testnet.riseofthewarbots.com/subnet/rpc"
+      "https://api.mainnet.playa3ull.games"
     ],
-    "infoURL": "https://riseofthewarbots.com"
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "PLAYA3ULL",
+      "symbol": "3ULL",
+      "decimals": 18
+    },
+    "projectURL": "https://playa3ull.games/",
+    "shortName": "playa3ull",
+    "chainId": 3011,
+    "networkId": 3011,
+    "explorers": [
+      {
+        "name": "ethernal",
+        "url": "https://avascan.info/blockchain/playa3ull/home",
+        "icon": "ethereum",
+        "standard": "none"
+      }
+    ]
+  },
+  {
+    "name": "Shrapnel Subnet",
+    "chain": "Shrapnel",
+    "description": "Subnet for Shrapnel, the 1st blockchain-enabled AAA customizable First Person Shooter (FPS) video game to be owned by players.",
+    "isLive": true,
+    "rpc": [
+      "https://subnets.avax.network/shrapnel/mainnet/rpc"
+    ],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "Shrapnel",
+      "symbol": "SHRAP",
+      "decimals": 18
+    },
+    "projectURL": "https://www.shrapnel.com/",
+    "shortName": "shrapnel",
+    "chainId": 2044,
+    "networkId": 2044,
+    "explorers": [
+      {
+        "name": "ethernal",
+        "url": "https://avascan.info/blockchain/shrapnel/home",
+        "icon": "ethereum",
+        "standard": "none"
+      }
+    ]
   }
 ]

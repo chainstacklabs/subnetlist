@@ -8,7 +8,7 @@ import {
   Checkbox,
   Link,
 } from '@material-ui/core'
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
+import { createTheme, ThemeProvider } from '@material-ui/core/styles'
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward'
 import CloseIcon from '@material-ui/icons/Close'
 
@@ -18,14 +18,14 @@ export default function Avaxsubnet({ closeAvaxsubnet }) {
   const [checked, setChecked] = useState(false)
 
   const navigateToAvaxsubnet = () => {
-    window.open('https://chainstack.com/permissioned-chains-avalanche-subnets/', '_blank')
+    window.open('https://chainstack.com/avalanche-subnets/', '_blank')
   }
 
   const handleChange = () => {
     setChecked(!checked)
   }
 
-  const theme = createMuiTheme({
+  const theme = createTheme({
     palette: {
       type: 'dark',
       secondary: {
@@ -74,7 +74,7 @@ export default function Avaxsubnet({ closeAvaxsubnet }) {
       <ThemeProvider theme={theme}>
         <div className={classes.topInfo}>
           <img
-            src="/subnet-tech/chainstack-subnet.png"
+            src="/chainstack-subnet.png"
             width={126}
             height={126}
             className={classes.avatar}

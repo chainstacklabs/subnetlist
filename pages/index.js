@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import styles from '../styles/Home.module.css'
 import {
   withTheme,
-  createMuiTheme,
+  createTheme,
   ThemeProvider,
 } from '@material-ui/core/styles'
 import path from 'path'
@@ -24,7 +24,7 @@ import subnetList from '../components/chain/subnets.json'
 import mainnetList from '../components/chain/chains.json'
 import Navigation from '../components/navigation/navigation'
 
-const searchTheme = createMuiTheme({
+const searchTheme = createTheme({
   palette: {
     type: 'light',
     primary: {
@@ -109,7 +109,7 @@ function Home({ changeTheme, theme }) {
 
   const addNetwork = () => {
     window.open(
-      'https://github.com/chainstacklabs/subnet-tech#adding-a-subnet',
+      'https://github.com/chainstacklabs/subnetlist#adding-a-subnet',
       '_blank'
     )
   }
@@ -132,18 +132,18 @@ function Home({ changeTheme, theme }) {
     <div className={styles.container}>
       <Head>
         <title>Avalanche subnets list</title>
-        <link rel="icon" href="/subnet-tech/favicon.png" />
+        <link rel="icon" href="/favicon.png" />
         <meta
           property="og:description"
-          content="subnet.tech is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."
+          content="Subnet List is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."
         />
-        <meta property="og:image" content="/og-image-new.jpeg" />
+        <meta property="og:image" content="/og-image.png" />
 
         <meta
           name="twitter:description"
-          content="subnet.tech is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."
+          content="Subnet List is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."
         />
-        <meta name="twitter:image" content="/og-image-new.jpeg" />
+        <meta name="twitter:image" content="/og-image.png" />
       </Head>
 
       <main className={styles.main}>
@@ -178,7 +178,7 @@ function Home({ changeTheme, theme }) {
                       fullWidth
                       className={classes.searchContainer}
                       variant="outlined"
-                      placeholder="Swimmer..."
+                      placeholder="Shrapnel..."
                       value={search}
                       onChange={onSearchChanged}
                       InputProps={{

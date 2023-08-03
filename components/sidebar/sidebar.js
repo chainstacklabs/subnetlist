@@ -15,13 +15,13 @@ import ValidatorIcon from '@material-ui/icons/AccountBalance'
 export default function Sidebar({}) {
   const addNetwork = () => {
     window.open(
-      'https://github.com/chainstacklabs/subnet-tech#adding-a-subnet',
+      'https://github.com/chainstacklabs/subnetlist#adding-a-subnet',
       '_blank'
     )
   }
   const addValidator = () => {
     window.open(
-      'https://github.com/chainstacklabs/subnet-tech#adding-a-validator',
+      'https://github.com/chainstacklabs/subnetlist#adding-a-validator',
       '_blank'
     )
   }
@@ -29,13 +29,13 @@ export default function Sidebar({}) {
     <div className={classes.copyContainer}>
       <div className={classes.copyCentered}>
         <Typography variant="h1" className={classes.chainListSpacing}>
-          <span className={classes.helpingUnderline}>subnet.tech</span>
+          <span className={classes.helpingUnderline}>Subnet List</span>
         </Typography>
         <Typography variant="h2" className={classes.helpingParagraph}>
           Connect to all Avalanche subnets
         </Typography>
         <Typography className={classes.subTitle} variant="h3">
-          <strong className={classes.redText}>subnet.tech</strong> is an{' '}
+          <strong className={classes.redText}>Subnet List</strong> is an{' '}
           <strong>
             aggregator of Avalanche subnets, projects, validators, and
             educational resources
@@ -73,7 +73,7 @@ export default function Sidebar({}) {
         <div className={classes.socials}>
           <a
             className={`${classes.socialButton}`}
-            href="https://github.com/chainstacklabs/subnet-tech"
+            href="https://github.com/chainstacklabs/subnetlist"
             target="_blank"
             rel="noopener noreferrer"
           >

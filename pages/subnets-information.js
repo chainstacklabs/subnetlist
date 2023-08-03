@@ -14,7 +14,7 @@ import classes from './index.module.css'
 function Validators({ changeTheme, theme }) {
   const addNetwork = () => {
     window.open(
-      'https://github.com/chainstacklabs/subnet-tech#adding-a-subnet',
+      'https://github.com/chainstacklabs/subnetlist#adding-a-subnet',
       '_blank'
     )
   }
@@ -22,18 +22,18 @@ function Validators({ changeTheme, theme }) {
     <div className={styles.container}>
       <Head>
         <title>Avalanche Subnets Information</title>
-        <link rel="icon" href="/subnet-tech/favicon.png" />
+        <link rel="icon" href="/favicon.png" />
         <meta
           property="og:description"
-          content="subnet.tech is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."
+          content="Subnet List is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."
         />
-        <meta property="og:image" content="/og-image-new.jpeg" />
+        <meta property="og:image" content="/og-image.png" />
 
         <meta
           name="twitter:description"
-          content="subnet.tech is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."
+          content="Subnet List is an aggregator of Avalanche subnets, projects, validators, and educational resources around Avalanche subnets."
         />
-        <meta name="twitter:image" content="/og-image-new.jpeg" />
+        <meta name="twitter:image" content="/og-image.png" />
       </Head>
 
       <main className={styles.main}>
@@ -143,9 +143,8 @@ function Validators({ changeTheme, theme }) {
               </Typography>
 
               <Typography variant="body1">
-                The
+                The{' '}
                 <Link href="https://docs.avax.network/build/tutorials/platform/subnets/">
-                  {' '}
                   official documentation{' '}
                 </Link>
                 defines subnets as:
@@ -175,56 +174,45 @@ function Validators({ changeTheme, theme }) {
                 </ul>
               </Typography>
 
-              <a
-                href="/subnet-tech/subnets-diagram-new.png"
-                target="_blank"
-                className={classes.diagram}
-              >
-                <img
-                  src="/subnet-tech/subnets-diagram-new.png"
-                  className={classes.diagram}
-                />
-              </a>
-
               <Typography variant="h3" className={classes.subTitle}>
                 About customized blockchain
               </Typography>
-              <Typography variant="body1">
-                Avalanche features 3 built-in blockchains: Exchange Chain
-                (X-Chain), Platform Chain (P-Chain), and Contract Chain
-                (C-Chain). All 3 blockchains are validated and secured by the
-                Primary Network. The Primary Network is a special subnet, and
-                all members of all custom subnets must also be a member of the
-                Primary Network by staking at least 2,000 AVAX.
-              </Typography>
-              <Typography variant="body1">
-                Every Avalanche blockchain is an instance of a Virtual Machine.
-                For example, X-Chain is an instance of AVM, C-Chain is Subnet
-                EVM's instance, P-Chain is an Avalanche's metadata blockchain
-                with Snowman consensus protocol.
-              </Typography>
-              <Typography variant="body1">
-                Avalanche enables you to create a <strong>subnet</strong> which
-                validate blockchain with default, configured or custom Virtual
-                Machine.
-              </Typography>
-              <Typography variant="body1">
-                Virtual Machine can be fully customized to provide any custom
-                business logic.
-              </Typography>
-
-              <Typography variant="body1">
-                Developers can create their own blockchain by implementing
-                <Link href="https://docs.avax.network/build/tutorials/platform/subnets/create-a-virtual-machine-vm">
-                  {' '}
-                  ChainVM{' '}
-                </Link>
-                interface for compatibility with AvalancheGo.
-              </Typography>
-              <Typography variant="body1">
-                Blockchain can be “hidden” from other non-relevant nodes by
-                configuring every node in the subnet.
-              </Typography>
+              <div className={classes.textContainer}>
+                <Typography variant="body1">
+                  Avalanche features 3 built-in blockchains: Exchange Chain
+                  (X-Chain), Platform Chain (P-Chain), and Contract Chain
+                  (C-Chain). All 3 blockchains are validated and secured by the
+                  Primary Network. The Primary Network is a special subnet, and
+                  all members of all custom subnets must also be a member of the
+                  Primary Network by staking at least 2,000 AVAX.
+                </Typography>
+                <Typography variant="body1">
+                  Every Avalanche blockchain is an instance of a Virtual Machine.
+                  For example, X-Chain is an instance of AVM, C-Chain is Subnet
+                  EVM's instance, P-Chain is an Avalanche's metadata blockchain
+                  with Snowman consensus protocol.
+                </Typography>
+                <Typography variant="body1">
+                  Avalanche enables you to create a <strong>subnet</strong> which
+                  validate blockchain with default, configured or custom Virtual
+                  Machine.
+                </Typography>
+                <Typography variant="body1">
+                  Virtual Machine can be fully customized to provide any custom
+                  business logic.
+                </Typography>
+                <Typography variant="body1">
+                  Developers can create their own blockchain by implementing{' '}
+                  <Link href="https://docs.avax.network/build/tutorials/platform/subnets/create-a-virtual-machine-vm">
+                    ChainVM
+                  </Link>
+                  {' '}interface for compatibility with AvalancheGo.
+                </Typography>
+                <Typography variant="body1">
+                  Blockchain can be “hidden” from other non-relevant nodes by
+                  configuring every node in the subnet.
+                </Typography>
+              </div>
             </div>
           </div>
         </div>

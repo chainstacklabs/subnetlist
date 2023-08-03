@@ -7,7 +7,7 @@ import ArrowForwardIcon from '@material-ui/icons/ArrowForward'
 export default function Validator({}) {
   const navigateToAvaxsubnet = () => {
     window.open(
-      'https://chainstack.com/permissioned-chains-avalanche-subnets/',
+      'https://chainstack.com/avalanche-subnets/',
       '_blank'
     )
   }
@@ -15,7 +15,7 @@ export default function Validator({}) {
     <Paper elevation={1} className={classes.validatorAdCard}>
       <div className={classes.topInfo}>
         <img
-          src="/subnet-tech/chainstack-subnet.png"
+          src="/chainstack-subnet.png"
           width={64}
           height={64}
           className={classes.avatar}

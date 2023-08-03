@@ -15,7 +15,6 @@ import MonetizationOnIcon from '@material-ui/icons/MonetizationOn'
 import classes from './chain.module.css'
 
 import stores from '../../stores/index.js'
-import { getProvider } from '../../utils'
 
 import {
   ERROR,
@@ -89,26 +88,16 @@ export default function Chain({ chain }) {
 
   const renderProviderText = () => {
     if (account && account.address) {
-      const providerTextList = {
-        Metamask: 'Add to MetaMask',
-      }
-      return providerTextList[getProvider()]
+      return 'Add to Wallet'
     } else {
-      return 'Connect wallet to add'
+      return 'Connect Wallet'
     }
   }
   const renderBadgeLabel = () => {
-    if (chain.isMain && chain.isLive) {
+    if (chain.isLive) {
       return `Mainnet`
     }
-    if (chain.isMain && !chain.isLive) {
-      return `Testnet`
-    }
-    if (!chain.isMain && chain.isLive) {
-      return `Subnet Live`
-    }
-
-    return `Subnet Test`
+    return `Testnet`
   }
   const netColor = () => {
     // return `primary`
@@ -119,10 +108,7 @@ export default function Chain({ chain }) {
   }
 
   const icon = useMemo(() => {
-    return chain.isMain ? `/subnet-tech/favicon.png` : `/subnet-tech/chains/unknown-logo.png`
-    // return chain.chainSlug
-    //   ? `https://subnet.tech/chain-icons/rsz_${chain.chainSlug}.jpg`
-    //   : '/unknown-logo.png'
+    return chain.isMain ? `/favicon.png` : `/chains/unknown-logo.png`
   }, [chain])
 
   if (!chain) {
