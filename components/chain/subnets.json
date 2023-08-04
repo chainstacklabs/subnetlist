@@ -191,5 +191,86 @@
         "standard": "none"
       }
     ]
+  },
+  {
+    "name": "DOS Subnet",
+    "chain": "DOS",
+    "description": "Subnet for DOS, the fastest and zero gas fee blockchain network.",
+    "isLive": true,
+    "rpc": [
+      "https://main.doschain.com"
+    ],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "DOS",
+      "symbol": "DOS",
+      "decimals": 18
+    },
+    "projectURL": "https://doschain.com/",
+    "shortName": "dos",
+    "chainId": 7979,
+    "networkId": 7979,
+    "explorers": [
+      {
+        "name": "ethernal",
+        "url": "https://avascan.info/blockchain/dos/home",
+        "icon": "ethereum",
+        "standard": "none"
+      }
+    ]
+  },
+  {
+    "name": "StepNetwork Subnet",
+    "chain": "StepNetwork",
+    "description": "Subnet for Step Network, the blockchain made for humans.",
+    "isLive": true,
+    "rpc": [
+      "https://rpc.step.network"
+    ],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "FITFI",
+      "symbol": "FITFI",
+      "decimals": 18
+    },
+    "projectURL": "https://step.network/",
+    "shortName": "step",
+    "chainId": 1234,
+    "networkId": 1234,
+    "explorers": [
+      {
+        "name": "ethernal",
+        "url": "https://avascan.info/blockchain/stepnetwork/home",
+        "icon": "ethereum",
+        "standard": "none"
+      }
+    ]
+  },
+  {
+    "name": "XPLUS Subnet",
+    "chain": "XPLUS",
+    "description": "Subnet for XPLUS, a sharing economy in Web3.",
+    "isLive": true,
+    "rpc": [
+      "https://xsc-dataseed01.xplus.io"
+    ],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "XYZ",
+      "symbol": "XYZ",
+      "decimals": 18
+    },
+    "projectURL": "https://www.xplus.com/",
+    "shortName": "xplus",
+    "chainId": 1228,
+    "networkId": 1228,
+    "explorers": [
+      {
+        "name": "ethernal",
+        "url": "https://xplusscan.io/blockchain/xplus/home",
+        "icon": "ethereum",
+        "standard": "none"
+      }
+    ]
   }
 ]
