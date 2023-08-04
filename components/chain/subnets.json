@@ -11,7 +11,7 @@
       "symbol": "gMELD",
       "decimals": 18
     },
-    "chainId": 0x13D92E8D,
+    "chainId": "0x13D92E8D",
     "rpc": [
       "https://subnets.avax.network/meld/mainnet/rpc"
     ], 
@@ -39,7 +39,7 @@
       "symbol": "gMELD",
       "decimals": 18
     },
-    "chainId": D3B745E,
+    "chainId": "0xD3B745E",
     "rpc": [
       "https://subnets.avax.network/meld/testnet/rpc"
     ], 
