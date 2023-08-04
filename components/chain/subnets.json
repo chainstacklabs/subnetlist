@@ -272,5 +272,59 @@
         "standard": "none"
       }
     ]
+  },
+  {
+    "name": "XANA Subnet",
+    "chain": "XANAchain",
+    "description": "Subnet for XANA, an AI-driven Web3 infrastructure custom-built for the Metaverse.",
+    "isLive": true,
+    "rpc": [
+      "https://mainnet.xana.net/rpc"
+    ],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "XETA",
+      "symbol": "XETA",
+      "decimals": 18
+    },
+    "projectURL": "https://xana.net/",
+    "shortName": "xana",
+    "chainId": 8888,
+    "networkId": 8888,
+    "explorers": [
+      {
+        "name": "ethernal",
+        "url": "https://avascan.info/blockchain/xana/home",
+        "icon": "ethereum",
+        "standard": "none"
+      }
+    ]
+  },
+  {
+    "name": "UPTN Subnet",
+    "chain": "UPTN",
+    "description": "Subnet for UPTN, a leading data and technology company in South Korea.",
+    "isLive": true,
+    "rpc": [
+      "https://node-api.uptn.io/v1/ext/rpc"
+    ],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "UPTN",
+      "symbol": "UPTN",
+      "decimals": 18
+    },
+    "projectURL": "https://www.skplanet.com/eng/main",
+    "shortName": "uptn",
+    "chainId": 6119,
+    "networkId": 6119,
+    "explorers": [
+      {
+        "name": "ethernal",
+        "url": "https://avascan.info/blockchain/sk-planet/home",
+        "icon": "ethereum",
+        "standard": "none"
+      }
+    ]
   }
 ]
