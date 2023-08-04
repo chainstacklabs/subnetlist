@@ -1,5 +1,62 @@
 [
   {
+    "name": "MELD", 
+    "chain: "MELD", 
+    "title": "MELD", 
+    "description": "", 
+    "projectURL": "www.meld.com", 
+    "isLive" : true,
+    "nativeCurrency": {
+      "name": "gMELD",
+      "symbol": "gMELD",
+      "decimals": 18
+    },
+    "chainId": 0x13D92E8D,
+    "rpc": [
+      "https://subnets.avax.network/meld/mainnet/rpc"
+    ], 
+    "blockchain" : "W6m4NgS2ie2LJerquYAt7V6fVXVAMmjvYFsWWtyjDY97exGTy",
+    "subnetId" : "2ibTg9ruyJRQf4NpRbkd1Utcfayo3gRRpkoWGCWNC3oXTZoYCe", 
+    "validators": 15 ,
+    "faucets": [],
+    "explorers": [
+      {
+        "name": "ethernal",
+        "url": "https://subnets.avax.network/meld",
+        "icon": "ethereum",
+        "standard": "none"
+      }
+    ]
+  },{
+    "name": "MELD Kanazawa", 
+    "chain: "MELD Kanazawa", 
+    "title": "MELD Kanazawa Testnet", 
+    "description": "Testnet of the MELD protocol", 
+    "projectURL": "www.meld.com", 
+    "isLive" : true,
+    "nativeCurrency": {
+      "name": "gMELD",
+      "symbol": "gMELD",
+      "decimals": 18
+    },
+    "chainId": D3B745E,
+    "rpc": [
+      "https://subnets.avax.network/meld/testnet/rpc"
+    ], 
+    "blockchain" : "2Ci7VYrUd4fTBqGA5D2HA6UPHzQ4LQyr8rZQww9MGSv9rNkRzn",
+    "subnetId" : "2eQhLLJq1XgV9HtFSsakRgHnf4bWcpxayFDvxJjjJKBLdNkQRk", 
+    "validators": 15 ,
+    "faucets": [],
+    "explorers": [
+      {
+        "name": "ethernal",
+        "url": "https://subnets-test.avax.network/meld",
+        "icon": "ethereum",
+        "standard": "none"
+      }
+    ]
+  },
+  {
     "name": "DFK Chain",
     "chain": "DFK",
     "description": "Subnet for DefiKingdoms project, a Defi protocol/NFT game running on Avalanche & Klaytn.",
