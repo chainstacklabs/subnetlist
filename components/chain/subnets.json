@@ -164,5 +164,32 @@
         "standard": "none"
       }
     ]
+  },
+  {
+    "name": "MELD Subnet",
+    "chain": "MELD",
+    "description": "Subnet for Mintara, a non-custodial DeFi protocol.",
+    "isLive": true,
+    "rpc": [
+      "https://subnets.avax.network/meld/mainnet/rpc"
+    ],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "MELD",
+      "symbol": "gMELD",
+      "decimals": 18
+    },
+    "projectURL": "https://www.meld.com/",
+    "shortName": "MELD",
+    "chainId": 333000333,
+    "networkId": 333000333,
+    "explorers": [
+      {
+        "name": "ethernal",
+        "url": "https://avascan.info/blockchain/meld/home",
+        "icon": "ethereum",
+        "standard": "none"
+      }
+    ]
   }
 ]
