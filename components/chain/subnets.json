@@ -195,7 +195,7 @@
   {
     "name": "DOS Subnet",
     "chain": "DOS",
-    "description": "Subnet for DOS, the fastest and zero gas fee blockchain network.",
+    "description": "Subnet for DOS, the fastest zero gas fee blockchain network, made for building any Web3 product- from gaming & entertainment to finance.",
     "isLive": true,
     "rpc": [
       "https://main.doschain.com"
