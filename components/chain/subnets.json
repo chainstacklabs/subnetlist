@@ -330,7 +330,7 @@
   {
     "name": "UPTN Subnet",
     "chain": "UPTN",
-    "description": "Subnet for UPTN, a leading data and technology company in South Korea.",
+    "description": "Subnet for UPTN, a blockchain made for daily life.",
     "isLive": true,
     "rpc": [
       "https://node-api.uptn.io/v1/ext/rpc"
