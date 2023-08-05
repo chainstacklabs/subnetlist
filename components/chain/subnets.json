@@ -220,7 +220,7 @@
     ]
   },
   {
-    "name": "StepNetwork Subnet",
+    "name": "Step Network Subnet",
     "chain": "StepNetwork",
     "description": "Subnet for Step Network, the blockchain made for humans.",
     "isLive": true,
