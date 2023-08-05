@@ -196,7 +196,7 @@
     "name": "MELD Kanazawa Subnet",
     "chain": "MELD Kanazawa",
     "description": "Testnet Subnet for MELD, a non-custodial DeFi protocol.",
-    "isLive": true,
+    "isLive": false,
     "rpc": [
       "https://subnets.avax.network/meld/testnet/rpc"
     ],
