@@ -47,5 +47,13 @@
     "totalStake": 9785,
     "feePercentage": 2,
     "openToValidate": false
+  },
+  {
+    "nodeID": "NodeID-N4r8sLfeDVa2c9eDFpE4wuxJccUku3LKu",
+    "description": "MAHOF professional Node Operator ",
+    "totalStake": 2013,
+    "feePercentage": 7,
+    "openToValidate": true,
+    "contactURL": "t.me/mahof,https://mahof.info"
   }
 ]
