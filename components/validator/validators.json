@@ -55,5 +55,13 @@
     "feePercentage": 7,
     "openToValidate": true,
     "contactURL": "t.me/mahof,https://mahof.info"
+  },
+  {
+    "nodeID": "NodeID-62XYpHtuv92hHhJJXVd4wxJqPFv9rbWA8",
+    "description": "SELCUK Node Operator ",
+    "totalStake": 5000,
+    "feePercentage": 2,
+    "openToValidate": true,
+    "contactURL": "t.me/minivipers"
   }
 ]
