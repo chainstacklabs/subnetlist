@@ -62,6 +62,6 @@
     "totalStake": 5000,
     "feePercentage": 2,
     "openToValidate": true,
-    "contactURL": "t.me/minivipers"
+    "contactURL": "https://t.me/minivipers"
   }
 ]
