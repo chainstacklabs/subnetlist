@@ -353,5 +353,32 @@
         "standard": "none"
       }
     ]
+  },
+  {
+    "name": "Apertum",
+    "chain": "APTM",
+    "description": "Apertum operates as an Avalanche subnet, enhancing transparency, security, and efficiency, and governance in smart contract-based DApps like DAO1, which provides automated tools, analytics, and decentralized governance.",
+    "isLive": true,
+    "rpc": [
+      "https://rpc.apertum.io/ext/bc/YDJ1r9RMkewATmA7B35q1bdV18aywzmdiXwd9zGBq3uQjsCnn/rpc"
+    ],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "Apertum",
+      "symbol": "APTM",
+      "decimals": 18
+    },
+    "projectURL": "https://apertum.io/",
+    "shortName": "aptm",
+    "chainId": 2786,
+    "networkId": 2786,
+    "explorers": [
+      {
+        "name": "ethernal",
+        "url": "https://explorer.apertum.io/",
+        "icon": "ethereum",
+        "standard": "none"
+      }
+    ]
   }
 ]
