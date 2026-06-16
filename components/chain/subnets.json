@@ -380,5 +380,80 @@
         "standard": "none"
       }
     ]
+  },
+  {
+    "name": "TSx Testnet",
+    "chain": "TSX",
+    "description": "TSx 1-of-1 Avalanche L1 testnet bootstrap. Chain ID 454 in the reserved 445–455 block.",
+    "isLive": false,
+    "rpc": ["https://subnets.avax.network/tsx-testnet/mainnet/rpc"],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "Avalanche",
+      "symbol": "AVAX",
+      "decimals": 18
+    },
+    "projectURL": "https://github.com/VenomekPL/TSx-Network",
+    "shortName": "tsx-testnet",
+    "chainId": 454,
+    "networkId": 454,
+    "explorers": [
+      {
+        "name": "Avalanche Subnet Explorer",
+        "url": "https://subnets.avax.network/tsx-testnet",
+        "icon": "ethereum",
+        "standard": "none"
+      }
+    ]
+  },
+  {
+    "name": "TSx Bastion",
+    "chain": "TSX",
+    "description": "TSx permissioned Avalanche L1 mainnet with contract deployer allowlist. Chain ID 445.",
+    "isLive": false,
+    "rpc": ["https://subnets.avax.network/tsx-bastion/mainnet/rpc"],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "Avalanche",
+      "symbol": "AVAX",
+      "decimals": 18
+    },
+    "projectURL": "https://github.com/VenomekPL/TSx-Network",
+    "shortName": "tsx-bastion",
+    "chainId": 445,
+    "networkId": 445,
+    "explorers": [
+      {
+        "name": "Avalanche Subnet Explorer",
+        "url": "https://subnets.avax.network/tsx-bastion",
+        "icon": "ethereum",
+        "standard": "none"
+      }
+    ]
+  },
+  {
+    "name": "TSx Horizon",
+    "chain": "TSX",
+    "description": "TSx open Avalanche L1 mainnet with 2-of-3 PoA quorum. Chain ID 455.",
+    "isLive": false,
+    "rpc": ["https://subnets.avax.network/tsx-horizon/mainnet/rpc"],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "Avalanche",
+      "symbol": "AVAX",
+      "decimals": 18
+    },
+    "projectURL": "https://github.com/VenomekPL/TSx-Network",
+    "shortName": "tsx-horizon",
+    "chainId": 455,
+    "networkId": 455,
+    "explorers": [
+      {
+        "name": "Avalanche Subnet Explorer",
+        "url": "https://subnets.avax.network/tsx-horizon",
+        "icon": "ethereum",
+        "standard": "none"
+      }
+    ]
   }
 ]
