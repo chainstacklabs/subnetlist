@@ -1,0 +1,12 @@
+{
+  "name": "subnetlist",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-18-bullseye",
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Next.js app",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "npm ci"
+}
